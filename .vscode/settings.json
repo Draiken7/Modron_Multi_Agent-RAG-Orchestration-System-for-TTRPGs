@@ -1,9 +1,0 @@
-{
-    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python",
-    "python.terminal.activateEnvironment": true,
-    "editor.formatOnSave": true,
-    "python.formatting.provider": "black",
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": "explicit"
-    }
-}
