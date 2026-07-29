@@ -46,6 +46,35 @@ If a user asks a naive RAG system, "How do sneak attacks work?", a standard sema
     </figcaption>
 </figure>
 
+
+This project implements an advanced, multi-agent Retrieval-Augmented Generation (RAG) system utilizing a state-machine architecture via LangGraph. The pipeline is designed to ensure factual accuracy, prevent hallucinations, and dynamically route queries across multiple complex document structures. The architecture is divided into three core subsystems:
+
+**I. Data Ingestion & Indexing Pipeline**
+
+- Batch Processing: Large PDF documents are parsed in chunks using Docling to prevent memory exhaustion, with intermediate states flushed to disk as Markdown.
+
+- Semantic Chunking: The Markdown is semantically split to preserve structural context (headers, tables).
+
+- Persistent Storage: Chunks are embedded using HuggingFace BGE models and stored in a persistent ChromaDB vector store.
+
+**II. Multi-Agent Retrieval Engine (Phase 1)**
+
+- Intent Router: A specialized LLM analyzes the user query and conversational history to cleanly extract mechanics and route the query to specific game systems.
+
+- Auditor (Critic): An independent evaluation node verifies the Router's output to prevent system hallucination.
+
+- Hybrid Retrieval: Executes a Reciprocal Rank Fusion (RRF) search, weighting results from dense vector embeddings (Cosine Similarity) and sparse keyword matching (in-memory BM25 index).
+
+**III. Generation & Reflection Engine (Phase 2)**
+
+- Game Master (Generator): Synthesizes the retrieved context and user query to generate a highly accurate, rule-compliant response.
+
+- Hallucination Critic: Audits the generated draft strictly against the retrieved context.
+
+- Fallback Strategies: If the draft fails the audit, the system can trigger HyDE (Hypothetical Document Embeddings) or Keyword Expansion algorithms to execute a secondary, optimized retrieval pass before gracefully failing or attempting generation again.
+
+- Memory Management: A sliding-window summarization node compresses conversation history to maintain context without exceeding token limits.
+
 ---
 
 ## Advanced RAG Mechanics & Autonomous Recovery
