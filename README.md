@@ -132,7 +132,9 @@ Modron relies on local execution for both data parsing and orchestration. Follow
 * **Ollama** (Required to serve local open-weight models). [Download Ollama here](https://ollama.com/), [Ollama Quickstart Here](https://docs.ollama.com/quickstart).
 
 ### Step 1: Clone the Repository
-
+```bash
+git clone [https://github.com/Draiken7/Modron_Multi_Agent-RAG-Orchestration-System-for-TTRPGs/tree/main](https://github.com/Draiken7/Modron_Multi_Agent-RAG-Orchestration-System-for-TTRPGs/tree/main)
+```
 
 ### Step 2: Automated Environment Setup
 To ensure all dependencies (including LangGraph, ChromaDB, and IBM Docling) are installed correctly, run the provided setup script for your operating system.
