@@ -1,0 +1,32 @@
+# PyTorch CUDA 12.1 Extra Index
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+# Core PyTorch GPU
+torch
+torchvision
+torchaudio
+
+# Developer & Environment
+ipykernel
+
+# Core Data & Validation
+pydantic
+pypdf==6.14.2
+docling==2.113.0
+
+# Retrieval & Embeddings
+rank-bm25==0.2.2
+sentence-transformers==5.6.0
+langchain-text-splitters==1.1.2
+langchain-chroma==1.1.0
+langchain-huggingface==1.2.2
+
+# LangChain Orchestration & Agents
+langchain==1.3.14
+langchain-community==0.4.2
+langchain-classic==1.0.8
+langchain-ollama==1.1.0
+langgraph==1.2.9
+
+# Testing & Evaluation Modules
+langchain-google-genai==4.3.1

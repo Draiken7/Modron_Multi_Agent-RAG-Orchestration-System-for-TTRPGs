@@ -1,0 +1,1727 @@
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+Test 1: 
+ QUERY: [Tell me about downtime.]
+
+
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['multiple']
+  -> clean_query: downtime
+  -> phase_1_retries: 1
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: False
+  -> phase_1_feedback: System Extraction: The router incorrectly included multiple systems when no explicit systems were mentioned in the question. The user's query about 'downtime' was general and did not reference any specific system. Clean Query: 'downtime' is correctly stripped of conversational filler. Contextual Systems and Cross-System Comparison: Not applicable due to lack of chat history/summary.
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['multiple']
+  -> clean_query: downtime
+  -> phase_1_retries: 2
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: False
+  -> phase_1_feedback: System Extraction: The router incorrectly selected 'multiple' systems as the question contains no explicit system references. Clean Query: Valid - 'downtime' preserves core term without conversational filler. Contextual Systems: Not applicable due to empty chat summary/history. Cross-System Comparison: Not applicable due to lack of prior context.
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['multiple']
+  -> clean_query: downtime
+  -> phase_1_retries: 3
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: False
+  -> phase_1_feedback: System Extraction: The router incorrectly selected 'multiple' systems as the question contains no explicit system references. Clean Query: Valid - 'downtime' preserves core term without conversational filler. Contextual Systems: Not applicable due to empty chat summary/history. Cross-System Comparison: Not applicable due to lack of prior context.
+
+=== FINISHED NODE: ROUTERFAIL ===
+  -> guessed_systems: ['multiple']
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Background Descriptions
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+## DOWNTIME ACTIVITIES SUMMARY
+
+--- [SYSTEM: LASER_AND_FEELINGS] ---
+## CHECK OUT  
+thedoubleclicks.com nightskygames.com
+
+--- [SYSTEM: PATHFINDER] ---
+| Sleep..................................................347 |                                 | Summon Nature's Ally                                     | II..................359  | True Strike.........................................370     |
+| Sleet Storm........................................348     |                                 | Summon Nature's Ally III.................359             |                          | Undeath to Death..............................370           |
+| Slow..................................................348  |                                 | Summon Nature's Ally IV.................359              |                          | Undetectable Alignment....................371               |
+| Snare.................................................348  |                                 | Summon Nature's Ally                                     | V..................360   | Unhallow...........................................371      |
+
+=== FINISHED NODE: SUMMARIZER ===
+  -> draft_response: In *Blades in the Dark*, downtime activities allow characters to spend time on tasks like crafting, training, or exploring, granting temporary benefits or progress toward long-term goals. *Dungeons & Dragons* and *Pathfinder* do not have a direct "downtime" mechanic as described in the retrieved excerpts. Could you clarify which system you’re referring to?
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+
+
+
+
+
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+Test 2: 
+ QUERY: [Tell me about dwarves]
+
+
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['multiple']
+  -> clean_query: Tell me about dwarves
+  -> phase_1_retries: 1
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: True
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Dwarf  
+Creature Type: Humanoid Size: Medium (about 4-5 feet tall) Speed: 30 feet  
+As a Dwarf, you have these special traits.  
+Darkvision. You have Darkvision with a range of 120 feet.  
+Dwarven Resilience. You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.  
+Dwarven Toughness. Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level.  
+Stonecunning. As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.  
+You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+## Creation Questions  
+1. GM asks: 'What type of creation is it and what does it do?' Player answers. A creation might be mundane, alchemical, arcane, or spark-craft. If a PC has an appropriate special ability ( Alchemist , Artificer , Strange Methods ), they get bonuses when inventing and crafting certain creation types.
+2. Player asks: 'What's the minimum quality level of this item?' GM answers, according to the magnitude of the effects the item produces as a guideline.
+3. GM asks: 'What rare, strange, or adverse aspect of this formula or design has kept it in obscurity, out of common usage? ' Player answers.
+4. Player asks: 'What drawbacks does this item have, if any?' GM answers by choosing one or more from the drawbacks list, or by saying there are none.  
+A PC with the Alchemist special ability invents and learns one special formula when they take the ability (they don't have to take time to learn it).
+
+--- [SYSTEM: LASER_AND_FEELINGS] ---
+## GM: CREATE A SPACE ADVENTURE  
+Roll or choose on the tables below.
+
+--- [SYSTEM: PATHFINDER] ---
+## Dwarves  
+Dwarves are a stoic but stern race, ensconced in cities carved from the hearts of mountains and fiercely determined to repel the depredations of savage races like orcs and goblins. More than any other race, the dwarves have acquired a reputation as dour and humorless craftsmen of the earth. It could be said that dwarven history shapes the dark disposition of many dwarves, for they reside in high mountains and dangerous realms   below   the   earth,   constantly   at   war   with   giants, goblins, and other such horrors.  
+Physical Description : Dwarves are a short and stocky race, and stand about a foot shorter than most humans, with wide, compact bodies that account for their burly appearance. Male and female dwarves pride themselves on the length of their hair, and men often decorate their beards with a variety of clasps and intricate braids. A clean-shaven male dwarf is a sure sign of madness, or worse-no one familiar with their race trusts a beardless dwarf.
+
+=== FINISHED NODE: SUMMARIZER ===
+  -> draft_response: In D&D 5e, dwarves have traits like Darkvision, Resistance to Poison damage, increased Hit Points, and the Stonecunning ability (a Bonus Action for Tremorsense). Other systems like Pathfinder focus on cultural descriptions rather than mechanical traits, while Blades in the Dark and Laser and Feelings lack relevant dwarf mechanics. Could you clarify which system you're using?
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+
+
+
+
+
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+Test 3: 
+ QUERY: [Tell me about sneak attacks]
+
+
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['multiple']
+  -> clean_query: sneak attacks
+  -> phase_1_retries: 1
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: True
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Level 1: Sneak Attack  
+You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack roll if you have Advantage on the roll and the attack uses a Finesse or a Ranged weapon. The extra damage's type is the same as the weapon's type.  
+|   Rogue Features Level |   Bonus | Class Features                                         | Sneak Attack   |
+|------------------------|---------|--------------------------------------------------------|----------------|
+|                      1 |      +2 | Expertise, Sneak Attack, Thieves' Cant, Weapon Mastery | 1d6            |
+|                      2 |      +2 | Cunning Action                                         | 1d6            |
+|                      3 |      +2 | Rogue Subclass, Steady Aim                             | 2d6            |
+|                      4 |      +2 | Ability Score Improvement                              | 2d6            |
+|                      5 |      +3 | Cunning Strike, Uncanny Dodge                          | 3d6            |
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+## Desperate  
+They're attacking us? No no no... I want a flashback to a few seconds ago to get a bad feeling about this before it kicks off.  
+- 4/5  Reduced  Effect: You  sense  the ambush, but it's down to seconds before everything happens. You can take one half-measure first. Do you drop to the ground for cover, push someone else down, something like that?
+- 1-3  Severe  Harm: You're  fixated  on one of the enemies, certain that they're gonna do something bad, and you get blindsided by someone else. Take level 3 harm, 'Stabbed in the Back. '
+
+--- [SYSTEM: LASER_AND_FEELINGS] ---
+## GM: RUN THE GAME  
+Play to find out how they defeat the threat. Introduce the threat by showing evidence of its recent badness. Before a threat does something to the characters, show signs that it's about to happen, then ask them what they do. 'Zorgon charges the megacannons on his ship. What do you do?' 'Daneela pours you a glass of Arcturan whiskey and slips her arm around your waist. What do you do?'  
+Call for a roll when the situation is uncertain. Don't pre-plan outcomes-let the chips fall where they may. Use failures to push the action forward. The situation always changes after a roll, for good or ill.  
+<!-- image -->  
+Ask questions and build on the answers. 'Have any of you encountered a Void Cultist before? Where? What happened?'  
+<!-- image -->  
+5. Rip a hole in reality
+6. Fix Everything
+
+--- [SYSTEM: PATHFINDER] ---
+| 6th     |                  +3 |          +2 |         +3 |          +3 | Sneak attack +3d6                                 | +1 level of existing class |
+| 7th     |                  +3 |          +2 |         +4 |          +4 | Impromptu sneak attack 2/day, Tricky spells 4/day | +1 level of existing class |
+| 8th     |                  +4 |          +3 |         +4 |          +4 | Sneak attack +4d6                                 | +1 level of existing class |
+| 9th     |                  +4 |          +3 |         +5 |          +5 | Invisible thief, Tricky spells 5/day              | +1 level of existing class |
+| 10th    |                  +5 |          +3 |         +5 |          +5 | Sneak attack +5d6, surprise spells                | +1 level of existing class |
+
+=== FINISHED NODE: SUMMARIZER ===
+  -> draft_response: In **Dungeons & Dragons 5e**, Sneak Attack allows Rogues to deal extra damage (1d6 at level 1, increasing with levels) when attacking with Advantage using a finesse or ranged weapon. In **Pathfinder**, Sneak Attack scales with levels (starting at +1d6, up to +5d6 at 10th level) and requires specific class progression. Blades in the Dark and Laser and Feelings lack explicit sneak attack mechanics. Could you clarify which system you're referring to?
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+
+
+
+
+
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+Test 4: 
+ QUERY: [Tell me about flashbacks in dnd]
+
+
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['dungeoun_and_dragons']
+  -> clean_query: flashbacks
+  -> phase_1_retries: 1
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: True
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Nightmare  
+| Nightmare                                                           | Nightmare                                                           | Nightmare                                                           | Nightmare                                                           | Nightmare                                                           | Nightmare                                                           | Nightmare                                                           | Nightmare                                                           | Nightmare                                                           | Nightmare                                                           | Nightmare                                                           |
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Legal Information  
+The System Reference Document 5.2.1 ('SRD 5.2.1') is provided to you free of charge by Wizards of the Coast LLC ('Wizards') under the terms of the Creative Commons Attribution 4.0 International License ('CC-BY-4.0'). You are free to use the content in this document in any manner permitted under CC-BY-4.0, provided that you include the following attribution statement in any of your work:  
+This work includes material from the System Reference Document 5.2.1 ('SRD 5.2.1') by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/ legalcode.  
+Please do not include any other attribution to Wizards or its parent or affiliates other than that provided above. You may, however, include a statement on your work indicating that it is 'compatible with fifth edition' or '5E compatible.'  
+Section 5 of CC-BY-4.0 includes a Disclaimer of Warranties and Limitation of Liability that limits our liability to you.  
+2
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Animated Objects  
+<!-- image -->  
+Immunities Poison, Psychic; Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned Senses Blindsight 60 ft.; Passive Perception 6 Languages None CR 1 (XP 200; PB +2)
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Actions  
+Bite. Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage. If the target is a Medium or smaller creature, it has the Prone condition.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Vampires  
+<!-- image -->  
+| Vampire Familiar                                                     | Vampire Familiar                                                     | Vampire Familiar                                                     | Vampire Familiar                                                     | Vampire Familiar                                                     | Vampire Familiar                                                     | Vampire Familiar                                                     | Vampire Familiar                                                     | Vampire Familiar                                                     | Vampire Familiar                                                     |
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Traits  
+Pack Tactics. The wolf has Advantage on attack rolls against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Heightened Spell
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Actions  
+Beak. Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Piercing damage.  
+<!-- image -->  
+## Actions  
+Hooves. Melee Attack Roll: +6, reach 5 ft. Hit: 9 (2d4 + 4) Bludgeoning damage. If the target is a Large or smaller creature and the horse moved 20+ feet straight toward it immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and has the Prone condition.  
+<!-- image -->  
+Bite. Melee Attack Roll: +5, reach 5 ft. Hit: 1 Piercing damage.  
+<!-- image -->
+
+=== FINISHED NODE: GAMEMASTER ===
+  -> draft_response: I don't have specific rules about "flashbacks" in the provided D&D rulebook excerpts. The retrieved context focuses on mechanics like attacks, monster traits, and legal information, but not narrative tools like flashbacks. 
+
+If you're referring to a specific rule or feature from a D&D source (e.g., a supplement, adventure, or homebrew), please provide more details, and I’ll do my best to help!
+  -> phase_2_retries: 1
+
+=== FINISHED NODE: GMCRITIC ===
+  -> phase_2_passed: True
+  -> phase_2_feedback: 
+
+=== FINISHED NODE: MEMORY ===
+  -> recent_history: ['User: Tell me about flashbacks in dnd', 'AI: I don\'t have specific rules about "flashbacks" in the provided D&D rulebook excerpts. The retrieved context focuses on mechanics like attacks, monster traits, and legal information, but not narrative tools like flashbacks. \n\nIf you\'re referring to a specific rule or feature from a D&D source (e.g., a supplement, adventure, or homebrew), please provide more details, and I’ll do my best to help!']
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+
+
+
+
+
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+Test 5: 
+ QUERY: [How does death saving throws work?]
+
+
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['multiple']
+  -> clean_query: death saving throws work
+  -> phase_1_retries: 1
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: False
+  -> phase_1_feedback: The router's selected system is incorrect. The user's question is about a term that is part of Dungeons & Dragons (D&D), so the router should have selected 'dungeons_and_dragons'. However, the proposed intent incorrectly states 'multiple', which is not applicable here. The evaluation indicates that the router's selection is wrong.
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['dungeoun_and_dragons']
+  -> clean_query: death saving throws
+  -> phase_1_retries: 2
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: True
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Saving Throws and Damage  
+Damage dealt via saving throws uses these rules.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Ability Modifier  
+Saving throws are named for the ability modifiers they use: a Constitution saving throw, a Wisdom saving throw, and so on. Different saving throws are used to resist different kinds of effects, as shown on the Saving Throw Examples table.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Death Saving Throw  
+A player character must make a Death Saving Throw (also called a Death Save) if they start their turn with 0 Hit Points. See also 'Playing the Game' ('Damage and Healing').
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Damage and Healing  
+Injury and death are frequent threats, as detailed in the following rules.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Death Saving Throws  
+Whenever you start your turn with 0 Hit Points, you must make a Death Saving Throw to determine whether you creep closer to death or hang on to life. Unlike other saving throws, this one isn't tied to an ability score. You're in the hands of fate now.  
+Three Successes/Failures. Roll 1d20. If the roll is 10 or higher, you succeed. Otherwise, you fail. A success or failure has no effect by itself. On your third success, you become Stable (see 'Stabilizing a Character' below). On your third failure, you die.  
+The successes and failures don't need to be consecutive; keep track of both until you collect three of a kind. The number of both is reset to zero when you regain any Hit Points or become Stable.  
+Rolling a 1 or 20. When you roll a 1 on the d20 for a Death Saving Throw, you suffer two failures. If you roll a 20 on the d20, you regain 1 Hit Point.  
+Damage at 0 Hit Points. If you take any damage while you have 0 Hit Points, you suffer a Death Saving Throw failure. If the damage is from a Critical Hit, you suffer two failures instead. If the damage equals or exceeds your Hit Point maximum, you die.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+Death. Each target makes a Constitution saving throw, taking 10d10 Necrotic damage on a failed save or half as much damage on a successful save.  
+Discord. Each target makes a Wisdom saving throw. On a failed save, a target argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has Disadvantage on attack rolls and ability checks.  
+Fear. Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute. While Frightened, the target must move at least 30 feet away from the glyph on each of its turns, if able.  
+Pain. Each target must succeed on a Constitution saving throw or have the Incapacitated condition for 1 minute.  
+Sleep. Each target must succeed on a Wisdom saving throw or have the Unconscious condition for 10 minutes. A creature awakens if it takes damage or if someone takes an action to shake it awake.  
+Stunning. Each target must succeed on a Wisdom saving throw or have the Stunned condition for 1 minute.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Eldritch Mind  
+You have Advantage on Constitution saving throws that you make to maintain Concentration.
+
+=== FINISHED NODE: GAMEMASTER ===
+  -> draft_response: Here’s how **Death Saving Throws** work, based on the official rules:
+
+- **Trigger**: You must make a Death Saving Throw if you start your turn with **0 Hit Points**.  
+- **Roll**: Roll a **d20**.  
+  - **Success**: 10 or higher (no immediate effect).  
+  - **Failure**: 9 or lower (no immediate effect).  
+- **Tracking**:  
+  - Keep track of **successes** and **failures** separately.  
+  - **Three successes** stabilize you (see "Stabilizing a Character").  
+  - **Three failures** result in death.  
+  - Successes and failures **don’t need to be consecutive**.  
+- **Critical Rolls**:  
+  - **Roll a 1**: Suffer **two failures** (not one).  
+  - **Roll a 20**: Regain **1 Hit Point** (and avoid a failure).  
+- **Damage at 0 HP**:  
+  - Taking **any damage** while at 0 HP triggers a **failure**.  
+  - **Critical hits** cause **two failures** instead of one.  
+  - Damage equal to or exceeding your **Hit Point maximum** kills you immediately.  
+
+**Note**: Death Saving Throws are separate from ability checks and use a "fate" system, not ability modifiers.
+  -> phase_2_retries: 1
+
+=== FINISHED NODE: GMCRITIC ===
+  -> phase_2_passed: False
+  -> phase_2_feedback: The GENERATION introduces the term 'fate system' which is not explicitly stated in the FACTS. While the FACTS mention Death Saving Throws are 'not tied to an ability score' and 'you're in the hands of fate,' the specific phrasing 'fate system' is an invented term not present in the provided rules.
+
+=== FINISHED NODE: GAMEMASTER ===
+  -> draft_response: Here’s how **Death Saving Throws** work, based on the official rules:
+
+### **Trigger**  
+A player character must make a Death Saving Throw if they start their turn with **0 Hit Points**.
+
+---
+
+### **Mechanics**  
+- **Roll a d20**:  
+  - **Success**: Roll **10 or higher**.  
+  - **Failure**: Roll **9 or lower**.  
+
+- **Tracking Successes/Failures**:  
+  - Keep track of both successes and failures separately.  
+  - **Three successes**: The character becomes **Stable** (no longer at 0 HP, but still unconscious).  
+  - **Three failures**: The character **dies**.  
+  - Successes and failures **don’t need to be consecutive**.  
+
+---
+
+### **Special Rolls**  
+- **Roll a 1**: Suffer **two failures** (not one).  
+- **Roll a 20**: Regain **1 Hit Point** (and avoid a failure).  
+
+---
+
+### **Damage While at 0 HP**  
+- Taking **any damage** while at 0 HP triggers a **failure** on the Death Saving Throw.  
+  - **Critical hit**: Causes **two failures** instead of one.  
+  - **Damage ≥ max HP**: The character **dies** immediately.  
+
+---
+
+### **Resetting the Count**  
+- The tally of successes/failures **resets to zero** if:  
+  - The character regains any **Hit Points**.  
+  - The character becomes **Stable**.  
+
+Let me know if you need clarification on specific edge cases! 🃏
+  -> phase_2_retries: 2
+
+=== FINISHED NODE: GMCRITIC ===
+  -> phase_2_passed: True
+  -> phase_2_feedback: 
+
+=== FINISHED NODE: MEMORY ===
+  -> recent_history: ['User: How does death saving throws work?', 'AI: Here’s how **Death Saving Throws** work, based on the official rules:\n\n### **Trigger**  \nA player character must make a Death Saving Throw if they start their turn with **0 Hit Points**.\n\n---\n\n### **Mechanics**  \n- **Roll a d20**:  \n  - **Success**: Roll **10 or higher**.  \n  - **Failure**: Roll **9 or lower**.  \n\n- **Tracking Successes/Failures**:  \n  - Keep track of both successes and failures separately.  \n  - **Three successes**: The character becomes **Stable** (no longer at 0 HP, but still unconscious).  \n  - **Three failures**: The character **dies**.  \n  - Successes and failures **don’t need to be consecutive**.  \n\n---\n\n### **Special Rolls**  \n- **Roll a 1**: Suffer **two failures** (not one).  \n- **Roll a 20**: Regain **1 Hit Point** (and avoid a failure).  \n\n---\n\n### **Damage While at 0 HP**  \n- Taking **any damage** while at 0 HP triggers a **failure** on the Death Saving Throw.  \n  - **Critical hit**: Causes **two failures** instead of one.  \n  - **Damage ≥ max HP**: The character **dies** immediately.  \n\n---\n\n### **Resetting the Count**  \n- The tally of successes/failures **resets to zero** if:  \n  - The character regains any **Hit Points**.  \n  - The character becomes **Stable**.  \n\nLet me know if you need clarification on specific edge cases! 🃏']
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+
+
+
+
+
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+Test 6: 
+ QUERY: [Help me by whipping up an NPC, a human mage.]
+
+
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['multiple']
+  -> clean_query: create npc human mage
+  -> phase_1_retries: 1
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: False
+  -> phase_1_feedback: System Extraction: The router should have included all active systems (dungeoun_and_dragons, blades_in_the_dark, laser_and_feelings, pathfinder) since the user's question didn't specify a particular system. The 'multiple' designation is insufficient as it doesn't explicitly list all systems. Clean Query: 'create npc human mage' is properly stripped of conversational filler.
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['dungeoun_and_dragons', 'blades_in_the_dark', 'laser_and_feelings', 'pathfinder']
+  -> clean_query: create npc human mage
+  -> phase_1_retries: 2
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: False
+  -> phase_1_feedback: System Extraction: The router included all active systems (dungeoun_and_dragons, blades_in_the_dark, laser_and_feelings, pathfinder) even though the user's question contained no explicit system references. The question only requested an NPC creation without specifying any system. The router should have limited systems to those explicitly mentioned in the query. Clean Query: 'create npc human mage' correctly strips conversational filler while preserving core terms.
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['multiple']
+  -> clean_query: create npc human mage
+  -> phase_1_retries: 3
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: False
+  -> phase_1_feedback: Critic execution failed due to format error: Invalid json output: 
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE . Please re-verify intent output.
+
+=== FINISHED NODE: ROUTERFAIL ===
+  -> guessed_systems: ['multiple']
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Becoming a Sorcerer …
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+Be a curious explorer of the game in play. Ask the players questions to feed your own interest in the ongoing fiction in which the PCs are the protagonists. Your game series is a cool TV show and you're its biggest fan. When you're curious about something that a PC says or does, ask them about it! 'I'm curious, though, when you tell him you'd do anything to help, do you really mean that? Anything? Are you that kind of person? Or are you just manipulating him?' These questions will often lead to goals, approaches, and rolls.  
+Advocate for the interests and capabilities of the NPCs. Your job is to convey the fictional world accurately, remember? Believable NPCs with interests and capabilities make for a more compelling fictional world. Don't be a push over. When the PCs take action against an NPC, remind the players of their interests and capabilities. 'But Quellyn won't just go along with all this, right? They're a witch, wanted by the Spirit Wardens. How are you going to contend with that?' When the PCs act in alignment with the interests of NPCs, remind the players of their support and friendship.
+
+--- [SYSTEM: LASER_AND_FEELINGS] ---
+## GM: RUN THE GAME  
+Play to find out how they defeat the threat. Introduce the threat by showing evidence of its recent badness. Before a threat does something to the characters, show signs that it's about to happen, then ask them what they do. 'Zorgon charges the megacannons on his ship. What do you do?' 'Daneela pours you a glass of Arcturan whiskey and slips her arm around your waist. What do you do?'  
+Call for a roll when the situation is uncertain. Don't pre-plan outcomes-let the chips fall where they may. Use failures to push the action forward. The situation always changes after a roll, for good or ill.  
+<!-- image -->  
+Ask questions and build on the answers. 'Have any of you encountered a Void Cultist before? Where? What happened?'  
+<!-- image -->  
+5. Rip a hole in reality
+6. Fix Everything
+
+--- [SYSTEM: PATHFINDER] ---
+## Construction  
+Requirements Craft Wondrous Item, mage hand; Cost 450 gp
+
+=== FINISHED NODE: SUMMARIZER ===
+  -> draft_response: The retrieved rule excerpts do not provide specific mechanics for creating NPCs or human mages in any of the listed systems. Blades in the Dark emphasizes NPC motivations and interactions, while D&D 5e, Pathfinder, and Laser and Feelings lack direct guidance on NPC creation mechanics. Could you clarify which system you’re using?
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+
+
+
+
+
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+Test 7: 
+ QUERY: [Help me name a npc character. A powerful duke like character.]
+
+
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['multiple']
+  -> clean_query: help name a npc character. powerful duke like character.
+  -> phase_1_retries: 1
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: True
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+Key. A Rare or rarer magic weapon with which you are proficient appears on your person. The GM chooses the weapon.  
+Knight. You gain the service of a Knight , who magically appears in an unoccupied space you choose within 30 feet of yourself. The knight has the same alignment as you and serves you loyally until death, believing the two of you have been drawn together by fate. Work with your GM to create a name and backstory for this NPC. The GM can use a different stat block to represent the knight, as desired.  
+Moon. You gain the ability to cast Wish 1d3 times. Puzzle. Permanently reduce your Intelligence or Wisdom by 1d4 + 1 (to a minimum score of 1). You can draw one additional card beyond your declared draws.  
+Rogue. An NPC of the GM's choice becomes Hostile toward you. You don't know the identity of this NPC until they or someone else reveals it. Nothing less than a Wish spell or divine intervention can end the NPC's hostility toward you.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+Be a curious explorer of the game in play. Ask the players questions to feed your own interest in the ongoing fiction in which the PCs are the protagonists. Your game series is a cool TV show and you're its biggest fan. When you're curious about something that a PC says or does, ask them about it! 'I'm curious, though, when you tell him you'd do anything to help, do you really mean that? Anything? Are you that kind of person? Or are you just manipulating him?' These questions will often lead to goals, approaches, and rolls.  
+Advocate for the interests and capabilities of the NPCs. Your job is to convey the fictional world accurately, remember? Believable NPCs with interests and capabilities make for a more compelling fictional world. Don't be a push over. When the PCs take action against an NPC, remind the players of their interests and capabilities. 'But Quellyn won't just go along with all this, right? They're a witch, wanted by the Spirit Wardens. How are you going to contend with that?' When the PCs act in alignment with the interests of NPCs, remind the players of their support and friendship.
+
+--- [SYSTEM: LASER_AND_FEELINGS] ---
+## PLAYERS: CREATE CHARACTERS  
+- 1 Choose a style for your character: Alien, Android, Dangerous, Heroic, Hot-Shot, Intrepid, or Savvy .  
+2 Choose a role for your character: Doctor, Envoy, Engineer, Explorer, Pilot, Scientist, or Soldier.  
+<!-- image -->  
+3 Choose your number , from 2 to 5. A high number means you're better at LASERS (technology; science; cold rationality; calm, precise action). A low number means you're better at FEELINGS (intuition; diplomacy; seduction; wild, passionate action).  
+<!-- image -->  
+4  
+Give your character a cool space adventure name . Like Sparks McGee or something.  
+You have: a Consortium uniform (with built-in vacc-suit for space walks), a super-sweet space-phone-cameracommunicator-scanner thing (with universal translator), a variable-beam phase pistol (set to stun, usually).  
+Player goal: Get your character involved in crazy space adventures and try to make the best of them.  
+Character goal: Choose one or create your own: Become Captain, Meet New Aliens, Shoot Bad Guys, Find New Worlds, Solve Weird Space Mysteries, Prove Yourself, or Keep Being Awesome (you have nothing to prove).
+
+--- [SYSTEM: PATHFINDER] ---
+## Step 7: Details  
+Once you have assigned   all   of   the   NPC's   gear,   all   that remains is to fill out the details. Determine the character's attack and damage bonuses, CMB, CMD, initiative modifier, and  Armor Class. If the character's magic items affect his skills or ability scores, make sure to take those changes into account.   Determine   the   character's   total   hit   points   by assuming   the   average   result.   Finally,   fill   out   any   other important details, such as name, alignment, religion, and a few personality traits to round him out.
+
+=== FINISHED NODE: SUMMARIZER ===
+  -> draft_response: In **Pathfinder**, NPC names are part of the "details" step when creating a character, alongside alignment, religion, and personality traits. Other systems like *Dungeons & Dragons* or *Blades in the Dark* don’t explicitly address NPC naming mechanics. Could you clarify which system you’re using?
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+
+
+
+
+
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+Test 8: 
+ QUERY: [Help me name a npc character. A powerful duke like character in Blades in the dark. Make sure the NPC fits the setting of game.]
+
+
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['blades_in_the_dark']
+  -> clean_query: name a npc character. powerful duke like character. fit the setting of game
+  -> phase_1_retries: 1
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: True
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: BLADES_IN_THE_DARK] ---
+Be a curious explorer of the game in play. Ask the players questions to feed your own interest in the ongoing fiction in which the PCs are the protagonists. Your game series is a cool TV show and you're its biggest fan. When you're curious about something that a PC says or does, ask them about it! 'I'm curious, though, when you tell him you'd do anything to help, do you really mean that? Anything? Are you that kind of person? Or are you just manipulating him?' These questions will often lead to goals, approaches, and rolls.  
+Advocate for the interests and capabilities of the NPCs. Your job is to convey the fictional world accurately, remember? Believable NPCs with interests and capabilities make for a more compelling fictional world. Don't be a push over. When the PCs take action against an NPC, remind the players of their interests and capabilities. 'But Quellyn won't just go along with all this, right? They're a witch, wanted by the Spirit Wardens. How are you going to contend with that?' When the PCs act in alignment with the interests of NPCs, remind the players of their support and friendship.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+## THE CREW  
+In addition to creating scoundrel characters, you'll also create the crew by choosing which type of criminal enterprise you're interested in exploring. The crew gets its own 'character sheet, ' just like a player character.  
+-  Assassins are killers for hire.
+-  A Cult serves a Forgotten God.
+-  Bravos are thugs and extortionists.
+-  Hawkers sell illegal products.
+-  Smugglers transport contraband.
+-  Shadows are thieves and spies.  
+The crew type isn't restrictive (you can pursue a variety of activities); it's there to help focus the game play. For more on crews, see page 91.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+## choose one friend and one rival  
+Each playbook has a list of potential NPC friends. Choose one from the list who is a close relationship (a good friend, a lover, a family relation, etc.). Mark the upwardpointing triangle next to their name. Then choose another NPC on the list who's your rival or enemy. Mark the downward-pointing triangle next to their name.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+-  If you want to be weird, you can be from Tycheros . It's a semi-mythical place, far away beyond the northern void sea. Everyone says that the people there are part-demon. If you choose Tycherosi heritage, also create a demonic telltale (like black shark eyes, feathers instead of hair, etc.) that marks your character.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+## other scenes  
+Play the NPCs. Mylera, Bazso, and Lyssa all have scoundrel-y things that need doing, so they'll offer the PCs jobs (until the PCs make an enemy of them, of course). Use the scores tables on page 306 for ideas. Also, each faction is vulnerable to criminal action in some way. How can the players use their crew's strengths to profit from this situation? Ask them how they want to gather information, which leads to a plan (or vice versa).  
+Don't waste time waffling around. Give them straightforward avenues to pursue at first. 'Do you want to rob the Crow's card game on Cinder street? It's probably not defended much right now.'  
+There are two sample starting scores, at right. Offer those, or one of the options below, and ask them which they want to pursue. Ask them to pick a plan and provide the detail, and get to it.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+Your playbook choice also represents  how the other scoundrels of the underworld see you. The names of the playbooks are underworld slang in Duskwall. If someone solves their problems with weird occult stuff, people say they're a 'Whisper. ' If they're a smooth talker and shrewd manipulator, people might call them a 'Slide. ' Part of your character's reputation is reflected by their playbook choice.  
+Each playbook is detailed in this section, starting on page 61.  
+Once you've chosen your playbook, follow the steps below to complete your character.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+Of course, you'll also have your specializations and skills, the qualities that make your character uniquely effective in the criminal world. You might want the ability to compel obedience from ghosts and channel electroplasmic energy through your body, or maybe you want to manipulate the network of the underworld to your advantage and see danger before it strikes, or maybe you just want to be the deadliest fighter with a blade. In this chapter, you'll learn how to create your own unique scoundrel and choose the abilities that suit the style of play you prefer.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+You might be able to Sway another PC. Ask the player if you have any leverage over their character. If you do, then your action can force them to see it your way. If you don't, then your action can only disrupt  them  somehow-an  intense distraction, but not a convincing one.
+
+=== FINISHED NODE: GAMEMASTER ===
+  -> draft_response: Here are three NPC name ideas for a powerful duke-like character in *Blades in the Dark*, tailored to the game’s setting and themes:
+
+- **Duke Veydris the Hollow**  
+  *Why it fits*: "Hollow" nods to the game’s themes of hidden motives and decay, while "Duke" establishes noble status. The name hints at a ruler who masks cruelty behind a veneer of civility, aligning with the game’s focus on moral ambiguity. Could tie into a **Cult** playbook (e.g., serving a Forgotten God) or **Tycherosi** heritage (part-demon traits).
+
+- **Lady Nyxara of the Void**  
+  *Why it fits*: "Nyxara" evokes darkness and mystery, while "Void" references the northern void sea from the Tycherosi lore. This name suits a **Shadow**-aligned noble who manipulates the underworld, possibly with **demonic telltale** features (e.g., obsidian eyes or feathered hair).
+
+- **Lord Malvora the Iron**  
+  *Why it fits*: "Iron" suggests a ruthless, unyielding ruler, fitting a **Bravo**-style antagonist or a **Smuggler**-connected warlord. The name could tie into a faction vulnerable to criminal action (e.g., a corrupt noble family hoarding resources).  
+
+**Bonus Tip**: Pair the name with a **demonic trait** (e.g., "Lord Malvora’s left eye glows with voidfire") or a **cult connection** (e.g., "Lady Nyxara whispers to the God of the Forgotten") to deepen the NPC’s role in the world. Let me know if you’d like help crafting their backstory!
+  -> phase_2_retries: 1
+
+=== FINISHED NODE: GMCRITIC ===
+  -> phase_2_passed: True
+  -> phase_2_feedback: 
+
+=== FINISHED NODE: MEMORY ===
+  -> recent_history: ['User: Help me name a npc character. A powerful duke like character in Blades in the dark. Make sure the NPC fits the setting of game.', 'AI: Here are three NPC name ideas for a powerful duke-like character in *Blades in the Dark*, tailored to the game’s setting and themes:\n\n- **Duke Veydris the Hollow**  \n  *Why it fits*: "Hollow" nods to the game’s themes of hidden motives and decay, while "Duke" establishes noble status. The name hints at a ruler who masks cruelty behind a veneer of civility, aligning with the game’s focus on moral ambiguity. Could tie into a **Cult** playbook (e.g., serving a Forgotten God) or **Tycherosi** heritage (part-demon traits).\n\n- **Lady Nyxara of the Void**  \n  *Why it fits*: "Nyxara" evokes darkness and mystery, while "Void" references the northern void sea from the Tycherosi lore. This name suits a **Shadow**-aligned noble who manipulates the underworld, possibly with **demonic telltale** features (e.g., obsidian eyes or feathered hair).\n\n- **Lord Malvora the Iron**  \n  *Why it fits*: "Iron" suggests a ruthless, unyielding ruler, fitting a **Bravo**-style antagonist or a **Smuggler**-connected warlord. The name could tie into a faction vulnerable to criminal action (e.g., a corrupt noble family hoarding resources).  \n\n**Bonus Tip**: Pair the name with a **demonic trait** (e.g., "Lord Malvora’s left eye glows with voidfire") or a **cult connection** (e.g., "Lady Nyxara whispers to the God of the Forgotten") to deepen the NPC’s role in the world. Let me know if you’d like help crafting their backstory!']
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+
+
+
+
+
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+Test 9: 
+ QUERY: [Help me creater a playable character in dnd. We want a monk, with a lot of wisdom and intelligence that is still formidable in a fight.]
+
+
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['dungeoun_and_dragons']
+  -> clean_query: optimize monk character stats with high wisdom and intelligence while maintaining combat effectiveness
+  -> phase_1_retries: 1
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: True
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Core Monk Traits  
+| Primary Ability            | Dexterity and Wisdom                                                                                                                                       |
+|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Hit Point Die              | D8 per Monk level                                                                                                                                          |
+| Saving Throw Proficiencies | Strength and Dexterity                                                                                                                                     |
+| Skill Proficiencies        | Choose 2: Acrobatics, Athlet- ics, History, Insight, Religion, or Stealth                                                                                  |
+| Weapon Proficiencies       | Simple weapons and Martial weapons that have the Light property                                                                                            |
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Challenge Rating  
+Challenge Rating is defined in 'Rules Glossary,' while guidance on using CR to plan potential combat encounters is in 'Gameplay Toolbox.'
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Monk Subclass: Warrior of the Open Hand
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Special Movement  
+If a party can travel at a high Speed for an extended time, as with a spell such as Wind Walk or a magic item such as a Carpet of Flying , translate the party's Speed into travel rates using these rules:
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Monk Features  
+|   Level |   Proficiency Bonus | Class Features                                       | Martial Arts   | Focus Points   | Unarmored Movement   |
+|---------|---------------------|------------------------------------------------------|----------------|----------------|----------------------|
+|       1 |                  +2 | Martial Arts, Unarmored Defense                      | 1d6            | -              | -                    |
+|       2 |                  +2 | Monk's Focus, Unarmored Movement, Uncanny Metabolism | 1d6            | 2              | +10 ft.              |
+|       3 |                  +2 | Deflect Attacks, Monk Subclass                       | 1d6            | 3              | +10 ft.              |
+|       4 |                  +2 | Ability Score Improvement, Slow Fall                 | 1d6            | 4              | +10 ft.              |
+|       5 |                  +3 | Extra Attack, Stunning Strike                        | 1d8            | 5              | +10 ft.              |
+|       6 |                  +3 | Empowered Strikes, Subclass feature                  | 1d8            | 6              | +15 ft.              |
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Initiative  
+Initiative determines the order of turns during combat. When combat starts, every participant rolls Initiative; they make a Dexterity check that determines their place in the Initiative order. The GM rolls for monsters. For a group of identical creatures, the GM makes a single roll, so each member of the group has the same Initiative.  
+Surprise. If a combatant is surprised by combat starting, that combatant has Disadvantage on their Initiative roll. For example, if an ambusher starts combat while hidden from a foe who is unaware that combat is starting, that foe is surprised.  
+Initiative Order. A combatant's check total is called their Initiative count, or Initiative for short. The GM ranks the combatants, from highest to lowest Initiative. This is the order in which they act during each round. The Initiative order remains the same from round to round.  
+Ties. If a tie occurs, the GM decides the order among tied monsters, and the players decide the order among tied characters. The GM decides the order if the tie is between a monster and a player character.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Class Overview  
+| Class     | Likes ...      | Primary Ability       | Complexity   |
+|-----------|----------------|-----------------------|--------------|
+| Barbarian | Battle         | Strength              | Average      |
+| Bard      | Performing     | Charisma              | High         |
+| Cleric    | Gods           | Wisdom                | Average      |
+| Druid     | Nature         | Wisdom                | High         |
+| Fighter   | Weapons        | Strength or Dexterity | Low          |
+| Monk      | Unarmed combat | Dexterity and Wisdom  | High         |
+| Paladin   | Defense        | Strength and Charisma | Average      |
+| Ranger    | Survival       | Dexterity and Wisdom  | Average      |  
+| Class    | Likes ...   | Primary Ability   | Complexity   |
+|----------|-------------|-------------------|--------------|
+| Rogue    | Stealth     | Dexterity         | Low          |
+| Sorcerer | Power       | Charisma          | High         |
+| Warlock  | Occult lore | Charisma          | High         |
+| Wizard   | Spellbooks  | Intelligence      | Average      |
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## High Altitude  
+Traveling at altitudes of 10,000 feet or higher above sea level is taxing for most creatures because of the reduced amount of oxygen in the air. Each hour such a creature spends traveling at high altitude counts as 2 hours for the purpose of determining how long that creature can travel (see 'Travel Pace').  
+Creatures can become acclimated to a high altitude by spending 30 days or more at this elevation. Creatures can't become acclimated to elevations above 20,000 feet unless they are native to such environments.
+
+=== FINISHED NODE: GAMEMASTER ===
+  -> draft_response: Here's a balanced Monk build leveraging **Wisdom** and **Intelligence** while maintaining combat prowess, based on official rules:
+
+---
+
+### **Core Stats**  
+- **Primary Abilities**: Dexterity (for speed/accuracy) and **Wisdom** (for perception/insight).  
+- **Secondary Stat**: **Intelligence** (for spellcasting or knowledge skills).  
+
+---
+
+### **Class Features**  
+- **Martial Arts** (Level 1): Use Dexterity for unarmed strikes (1d6).  
+- **Unarmored Defense** (Level 1): AC = 10 + Dexterity modifier + Wisdom modifier.  
+- **Unarmored Movement** (Level 2): +10 ft. movement speed (increases to +15 ft. at Level 6).  
+- **Stunning Strike** (Level 5): Use Wisdom modifier for attack rolls, and on a hit, stunned (1 round).  
+- **Slow Fall** (Level 4): Fall damage reduced by 10 ft. per level.  
+
+---
+
+### **Skill Proficiencies**  
+Choose **Wisdom-based** and **Intelligence-based** skills:  
+- **Religion** (Wisdom) – for lore and divine insight.  
+- **History** (Intelligence) – for knowledge checks and lore.  
+- **Stealth** (Dexterity) – for mobility and ambush tactics.  
+
+---
+
+### **Feats for Intelligence**  
+- **Magic Initiate** (Level 1): Learn cantrips/spells using **Intelligence** as the spellcasting ability (e.g., *Prestidigitation* or *Tasha’s Hideous Laughter*).  
+- **Spell Sniper** (Level 5): Add Intelligence modifier to attack rolls for spells.  
+
+---
+
+### **Subclass Suggestion**  
+- **Warrior of the Open Hand** (if available): Enhances unarmed strikes and adds versatility to combat.  
+
+---
+
+### **Combat Strategy**  
+- Use **Wisdom** for **Stunning Strike** to control enemies.  
+- Use **Intelligence**-based spells for utility or crowd control.  
+- Prioritize **Dexterity** for AC and movement speed.  
+
+---
+
+### **Optional Adjustments**  
+- If using **Intelligence** for spellcasting, consider **Arcane Trickster** (rogue) for hybrid spellcasting, but this deviates from core Monk rules.  
+- Use **High Altitude** rules if adventuring above 10,000 ft. (requires acclimation).  
+
+This build balances Wisdom/Intelligence with combat effectiveness, leveraging Monk’s mobility and spellcasting flexibility. Let me know if you want to tweak stats or subclass details! 🥋✨
+  -> phase_2_retries: 1
+
+=== FINISHED NODE: GMCRITIC ===
+  -> phase_2_passed: False
+  -> phase_2_feedback: The GENERATION introduces mechanics not present in the FACTS, including Feats (Magic Initiate, Spell Sniper), the Arcane Trickster subclass, and assumptions about secondary stats. These elements are not explicitly stated in the provided rule excerpts.
+
+=== FINISHED NODE: GAMEMASTER ===
+  -> draft_response: Here's a balanced Monk build with high **Wisdom** and **Intelligence**, optimized for combat and versatility:
+
+---
+
+### **Core Stats (Recommended Array)**  
+- **Dexterity**: 18 (primary ability for combat)  
+- **Wisdom**: 16 (high for combat features like *Deflect Attacks*)  
+- **Intelligence**: 14 (secondary stat, balanced with Dexterity)  
+- **Strength**: 12 (minimum for basic combat utility)  
+- **Charisma**: 10 (minimum for social interactions)  
+- **Constitution**: 10 (minimum for survivability)  
+
+---
+
+### **Class Features**  
+- **Martial Arts (1st level)**: Use Dexterity for attack rolls.  
+- **Unarmored Defense (1st level)**: AC = 10 + Dexterity modifier + Wisdom modifier.  
+- **Uncanny Metabolism (2nd level)**: +10 ft. movement (useful for positioning).  
+- **Deflect Attacks (3rd level)**: Use Wisdom for AC (boosts survivability).  
+- **Stunning Strike (5th level)**: Use Wisdom for attack rolls (adds combat versatility).  
+- **Slow Fall (4th level)**: Reduces fall damage (bonus for mobility).  
+
+---
+
+### **Subclass: Warrior of the Open Hand**  
+- **Focus Points**: Spend 1/day to reroll failed attacks (adds tactical flexibility).  
+- **Subclass Feature**: Use Wisdom for attack rolls (synergy with high Wisdom).  
+
+---
+
+### **Feats for Intelligence**  
+1. **Magic Initiate (1st level)**: Choose *Detect Magic* (Int) or *Magic Missile* (Int) for spellcasting.  
+2. **Skilled (1st level)**: Proficiency in Wisdom and Intelligence checks (enhances utility in social/combat scenarios).  
+
+---
+
+### **Combat Strategy**  
+- **Stunning Strike**: Use Wisdom to incapacitate enemies.  
+- **Deflect Attacks**: Use Wisdom to boost AC and counter melee attacks.  
+- **Movement**: Leverage Uncanny Metabolism for repositioning or flanking.  
+- **Spells**: Use *Detect Magic* to identify hidden threats or *Magic Missile* for ranged damage.  
+
+---
+
+### **Optional Enhancements**  
+- **Ability Score Improvement (5th level)**: Increase Wisdom or Intelligence further.  
+- **Empowered Strikes (6th level)**: Boost damage output with high Dexterity.  
+
+This build balances combat prowess (via Dexterity and Wisdom) with Intelligence-driven utility (spells, checks). Adjust stats based on your party’s needs! 🥋✨
+  -> phase_2_retries: 2
+
+=== FINISHED NODE: GMCRITIC ===
+  -> phase_2_passed: False
+  -> phase_2_feedback: The answer is 'no' because the GENERATION mentions 'feats' which are not included in the user's FACTS. The user's FACTS only include the 'Class Overview' with classes and their primary abilities, but not feats.
+
+=== FINISHED NODE: SYSTEMCA ===
+  -> guessed_systems: ['dungeoun_and_dragons']
+
+=== FINISHED NODE: KEYEXPANSION ===
+  -> expanded_keywords: ['monk class features', 'wisdom saving throws', 'intelligence-based spellcasting', 'fighting style: defense', 'ki points management', 'bonus action combat', 'action surge optimization', 'feats: resilient (wisdom/intelligence)', 'skill checks: perception', 'martial arts mastery', 'unarmed strike damage', 'defensive fighting style', 'magic initiate feat', 'war caster feat', 'toughness feat', 'mobile feat', 'alert feat', 'wisdom-intelligence synergy', 'combat effectiveness balance', 'class subclass: way of the open hand', 'class subclass: way of the four elements', 'spellcasting ability: intelligence', 'perception check bonuses', 'saving throw proficiency', 'skill proficiency: arcana', 'skill proficiency: religion', 'combat reflexes', 'dexterity-intelligence trade-off', 'ki-energy combat', 'bonus action spells', 'spellcasting focus object', 'wisdom-driven tactics', 'intelligence-enhanced spells']
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Core Monk Traits  
+| Primary Ability            | Dexterity and Wisdom                                                                                                                                       |
+|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Hit Point Die              | D8 per Monk level                                                                                                                                          |
+| Saving Throw Proficiencies | Strength and Dexterity                                                                                                                                     |
+| Skill Proficiencies        | Choose 2: Acrobatics, Athlet- ics, History, Insight, Religion, or Stealth                                                                                  |
+| Weapon Proficiencies       | Simple weapons and Martial weapons that have the Light property                                                                                            |
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Challenge Rating  
+Challenge Rating is defined in 'Rules Glossary,' while guidance on using CR to plan potential combat encounters is in 'Gameplay Toolbox.'
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Monk Subclass: Warrior of the Open Hand
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Special Movement  
+If a party can travel at a high Speed for an extended time, as with a spell such as Wind Walk or a magic item such as a Carpet of Flying , translate the party's Speed into travel rates using these rules:
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Monk Features  
+|   Level |   Proficiency Bonus | Class Features                                       | Martial Arts   | Focus Points   | Unarmored Movement   |
+|---------|---------------------|------------------------------------------------------|----------------|----------------|----------------------|
+|       1 |                  +2 | Martial Arts, Unarmored Defense                      | 1d6            | -              | -                    |
+|       2 |                  +2 | Monk's Focus, Unarmored Movement, Uncanny Metabolism | 1d6            | 2              | +10 ft.              |
+|       3 |                  +2 | Deflect Attacks, Monk Subclass                       | 1d6            | 3              | +10 ft.              |
+|       4 |                  +2 | Ability Score Improvement, Slow Fall                 | 1d6            | 4              | +10 ft.              |
+|       5 |                  +3 | Extra Attack, Stunning Strike                        | 1d8            | 5              | +10 ft.              |
+|       6 |                  +3 | Empowered Strikes, Subclass feature                  | 1d8            | 6              | +15 ft.              |
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Initiative  
+Initiative determines the order of turns during combat. When combat starts, every participant rolls Initiative; they make a Dexterity check that determines their place in the Initiative order. The GM rolls for monsters. For a group of identical creatures, the GM makes a single roll, so each member of the group has the same Initiative.  
+Surprise. If a combatant is surprised by combat starting, that combatant has Disadvantage on their Initiative roll. For example, if an ambusher starts combat while hidden from a foe who is unaware that combat is starting, that foe is surprised.  
+Initiative Order. A combatant's check total is called their Initiative count, or Initiative for short. The GM ranks the combatants, from highest to lowest Initiative. This is the order in which they act during each round. The Initiative order remains the same from round to round.  
+Ties. If a tie occurs, the GM decides the order among tied monsters, and the players decide the order among tied characters. The GM decides the order if the tie is between a monster and a player character.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Class Overview  
+| Class     | Likes ...      | Primary Ability       | Complexity   |
+|-----------|----------------|-----------------------|--------------|
+| Barbarian | Battle         | Strength              | Average      |
+| Bard      | Performing     | Charisma              | High         |
+| Cleric    | Gods           | Wisdom                | Average      |
+| Druid     | Nature         | Wisdom                | High         |
+| Fighter   | Weapons        | Strength or Dexterity | Low          |
+| Monk      | Unarmed combat | Dexterity and Wisdom  | High         |
+| Paladin   | Defense        | Strength and Charisma | Average      |
+| Ranger    | Survival       | Dexterity and Wisdom  | Average      |  
+| Class    | Likes ...   | Primary Ability   | Complexity   |
+|----------|-------------|-------------------|--------------|
+| Rogue    | Stealth     | Dexterity         | Low          |
+| Sorcerer | Power       | Charisma          | High         |
+| Warlock  | Occult lore | Charisma          | High         |
+| Wizard   | Spellbooks  | Intelligence      | Average      |
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## High Altitude  
+Traveling at altitudes of 10,000 feet or higher above sea level is taxing for most creatures because of the reduced amount of oxygen in the air. Each hour such a creature spends traveling at high altitude counts as 2 hours for the purpose of determining how long that creature can travel (see 'Travel Pace').  
+Creatures can become acclimated to a high altitude by spending 30 days or more at this elevation. Creatures can't become acclimated to elevations above 20,000 feet unless they are native to such environments.
+
+=== FINISHED NODE: GAMEMASTER ===
+  -> draft_response: Here's a balanced Monk build with high **Wisdom** and **Intelligence**, optimized for combat and versatility:
+
+---
+
+### **Core Stats (Recommended Array)**  
+- **Dexterity**: 18 (primary ability for combat)  
+- **Wisdom**: 16 (high for combat features like *Deflect Attacks*)  
+- **Intelligence**: 14 (secondary stat, balanced with Dexterity)  
+- **Strength**: 12 (minimum for basic combat utility)  
+- **Charisma**: 10 (minimum for social interactions)  
+- **Constitution**: 10 (minimum for survivability)  
+
+---
+
+### **Class Features**  
+- **Martial Arts (1st level)**: Use Dexterity for attack rolls.  
+- **Unarmored Defense (1st level)**: AC = 10 + Dexterity modifier + Wisdom modifier.  
+- **Uncanny Metabolism (2nd level)**: +10 ft. movement (useful for positioning).  
+- **Deflect Attacks (3rd level)**: Use Wisdom for AC (boosts survivability).  
+- **Stunning Strike (5th level)**: Use Wisdom for attack rolls (adds combat versatility).  
+- **Slow Fall (4th level)**: Reduces fall damage (bonus for mobility).  
+
+---
+
+### **Subclass: Warrior of the Open Hand**  
+- **Focus Points**: Spend 1/day to reroll failed attacks (adds tactical flexibility).  
+- **Subclass Feature**: Use Wisdom for attack rolls (synergy with high Wisdom).  
+
+---
+
+### **Feats for Intelligence**  
+1. **Magic Initiate (1st level)**: Choose *Detect Magic* (Int) or *Magic Missile* (Int) for spellcasting.  
+2. **Skilled (1st level)**: Proficiency in Wisdom and Intelligence checks (enhances utility in social/combat scenarios).  
+
+---
+
+### **Combat Strategy**  
+- **Stunning Strike**: Use Wisdom to incapacitate enemies.  
+- **Deflect Attacks**: Use Wisdom to boost AC and counter melee attacks.  
+- **Movement**: Leverage Uncanny Metabolism for repositioning or flanking.  
+- **Spells**: Use *Detect Magic* to identify hidden threats or *Magic Missile* for ranged damage.  
+
+---
+
+### **Optional Enhancements**  
+- **Ability Score Improvement (5th level)**: Increase Wisdom or Intelligence further.  
+- **Empowered Strikes (6th level)**: Boost damage output with high Dexterity.  
+
+This build balances combat prowess (via Dexterity and Wisdom) with Intelligence-driven utility (spells, checks). Adjust stats based on your party’s needs! 🥋✨
+  -> phase_2_retries: 3
+
+=== FINISHED NODE: GMCRITIC ===
+  -> phase_2_passed: False
+  -> phase_2_feedback: The GENERATION invents mechanics not present in the FACTS, such as the use of feats like 'Magic Initiate' and 'Skilled' which are not explicitly mentioned in the provided rule excerpts.
+
+=== FINISHED NODE: HYDE ===
+  -> guessed_systems: ['dungeoun_and_dragons']
+  -> clean_query: Sentinel intelligence Dexterity Combat Effectiveness monk AC Class Features effectiveness Detect Magic high optimize Action Surge Intelligence stats Wisdom Spellcasting Feats Ability Score Arcane Trickster maintaining Unarmed Strike while Race Selection Monk with and combat wisdom Feytouched Intelligence-Based Spells Extra Attack Fighting Style Combat Utility character Martial Arts Misty Step Magic Initiate Mobile Open Hand Technique
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Monk Features  
+|   Level |   Proficiency Bonus | Class Features                                       | Martial Arts   | Focus Points   | Unarmored Movement   |
+|---------|---------------------|------------------------------------------------------|----------------|----------------|----------------------|
+|       1 |                  +2 | Martial Arts, Unarmored Defense                      | 1d6            | -              | -                    |
+|       2 |                  +2 | Monk's Focus, Unarmored Movement, Uncanny Metabolism | 1d6            | 2              | +10 ft.              |
+|       3 |                  +2 | Deflect Attacks, Monk Subclass                       | 1d6            | 3              | +10 ft.              |
+|       4 |                  +2 | Ability Score Improvement, Slow Fall                 | 1d6            | 4              | +10 ft.              |
+|       5 |                  +3 | Extra Attack, Stunning Strike                        | 1d8            | 5              | +10 ft.              |
+|       6 |                  +3 | Empowered Strikes, Subclass feature                  | 1d8            | 6              | +15 ft.              |
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Level 1: Martial Arts  
+Your practice of martial arts gives you mastery of combat styles that use your Unarmed Strike and Monk weapons, which are the following:  
+- Simple Melee weapons
+- Martial Melee weapons that have the Light property  
+You gain the following benefits while you are unarmed or wielding only Monk weapons and you aren't wearing armor or wielding a Shield.  
+Bonus Unarmed Strike. You can make an Unarmed Strike as a Bonus Action.  
+Martial Arts Die. You can roll 1d6 in place of the normal damage of your Unarmed Strike or Monk weapons. This die changes as you gain Monk levels, as shown in the Martial Arts column of the Monk Features table.  
+Dexterous Attacks. You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes and Monk weapons. In addition, when you use the Grapple or Shove option of your Unarmed Strike, you can use your Dexterity modifier instead of your Strength modifier to determine the save DC.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Core Monk Traits  
+| Primary Ability            | Dexterity and Wisdom                                                                                                                                       |
+|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Hit Point Die              | D8 per Monk level                                                                                                                                          |
+| Saving Throw Proficiencies | Strength and Dexterity                                                                                                                                     |
+| Skill Proficiencies        | Choose 2: Acrobatics, Athlet- ics, History, Insight, Religion, or Stealth                                                                                  |
+| Weapon Proficiencies       | Simple weapons and Martial weapons that have the Light property                                                                                            |
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Monk Subclass: Warrior of the Open Hand
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Master Unarmed Combat Techniques  
+Warriors of the Open Hand are masters of unarmed combat. They learn techniques to push and trip their opponents and manipulate their own energy to protect themselves from harm.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).  
+Fey Ancestry. You have Advantage on saving throws you make to avoid or end the Charmed condition.  
+Keen Senses. You have proficiency in the Insight, Perception, or Survival skill.  
+Trance. You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Fighter Features  
+|   Level |   Proficiency Bonus | Class Features                                    |   Second Wind |   Weapon Mastery |
+|---------|---------------------|---------------------------------------------------|---------------|------------------|
+|       1 |                  +2 | Fighting Style, Second Wind, Weapon Mastery       |             2 |                3 |
+|       2 |                  +2 | Action Surge (one use), Tactical Mind             |             2 |                3 |
+|       3 |                  +2 | Fighter Subclass                                  |             2 |                3 |
+|       4 |                  +2 | Ability Score Improvement                         |             3 |                4 |
+|       5 |                  +3 | Extra Attack, Tactical Shift                      |             3 |                4 |
+|       6 |                  +3 | Ability Score Improvement                         |             3 |                4 |
+|       7 |                  +3 | Subclass feature                                  |             3 |                4 |
+
+=== FINISHED NODE: GAMEMASTER ===
+  -> draft_response: Here's a balanced Monk build with high **Wisdom** and **Intelligence**, while remaining formidable in combat:
+
+---
+
+### **Core Class Features**  
+- **Primary Ability Scores**: Dexterity (for combat) and **Wisdom** (for perception, spellcasting).  
+- **Spellcasting Ability**: Choose **Intelligence** or **Wisdom** (via subclass) for spellcasting.  
+
+---
+
+### **Recommended Ability Score Array**  
+| Ability | Score | Notes |  
+|--------|-------|------|  
+| **Dexterity** | 16 | Critical for attack rolls and unarmed strikes. |  
+| **Wisdom** | 14 | Enhances perception, spellcasting (via subclass), and resilience. |  
+| **Intelligence** | 14 | Enables spellcasting and strategic thinking. |  
+| **Strength** | 10 | Minimal use (Monks don’t rely on it). |  
+| **Constitution** | 12 | For durability. |  
+
+---
+
+### **Class Features**  
+- **Martial Arts** (1d6 damage, Dexterity-based attacks).  
+- **Unarmored Movement** (+10 ft. at 2nd level, +15 ft. at 6th level).  
+- **Deflect Attacks** (3rd level) to counter enemy attacks.  
+- **Stunning Strike** (5th level) for crowd control.  
+- **Slow Fall** (4th level) for high-altitude survival.  
+
+---
+
+### **Subclass: Warrior of the Open Hand**  
+- **Master Unarmed Combat Techniques**: Push, trip, and manipulate energy for protection.  
+- **Spellcasting** (via subclass): Use **Intelligence** or **Wisdom** as spellcasting ability. Example spells: *Tasha’s Hideous Laughter* (Int), *Tasha’s Hideous Laughter* (Wis), or *Mage Armor* (Wis).  
+- **Fey Ancestry** (optional): Advantage on saving throws vs. charm.  
+
+---
+
+### **Combat Strategy**  
+- **Unarmed Strikes**: Use Dexterity for damage and grapples.  
+- **Spells**: Cast *Tasha’s Hideous Laughter* or *Hold Person* to disable foes.  
+- **Movement**: Use +15 ft. unarmored movement to reposition or chase enemies.  
+- **Deflect Attacks**: Reflect enemy strikes to gain advantage on attacks.  
+
+---
+
+### **Feats (Optional)**  
+- **Action Surge** (Fighter subclass) for extra attacks.  
+- **War Caster** for spellcasting while fighting.  
+- **Resilient (Wisdom/Intelligence)** to boost saving throws and spellcasting.  
+
+This build balances martial prowess with spellcasting, leveraging **Wisdom** for resilience and **Intelligence** for strategic magic. 🥋✨
+  -> phase_2_retries: 4
+
+=== FINISHED NODE: GMCRITIC ===
+  -> phase_2_passed: False
+  -> phase_2_feedback: The GENERATION mentions 'Feats (Optional)' including 'War Caster' and 'Resilient (Wisdom/Intelligence)', which are not explicitly stated in the provided FACTS. The FACTS only describe Monk and Fighter class features, but do not mention feats as a separate system. This constitutes invented mechanics not present in the original rules.
+
+=== FINISHED NODE: GMFAILSAFE ===
+  -> draft_response: I apologize, but I am having trouble verifying the official rules for this mechanic in my database right now. Could you try rephrasing your question or providing more context?
+
+=== FINISHED NODE: MEMORY ===
+  -> recent_history: ['User: Help me creater a playable character in dnd. We want a monk, with a lot of wisdom and intelligence that is still formidable in a fight.', 'AI: I apologize, but I am having trouble verifying the official rules for this mechanic in my database right now. Could you try rephrasing your question or providing more context?']
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+
+
+
+
+
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+Test 10: 
+ QUERY: [Can you explain how sneak attack works in Pathfinder?]
+
+
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['pathfinder']
+  -> clean_query: explain how sneak attack works
+  -> phase_1_retries: 1
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: True
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: PATHFINDER] ---
+An attacker must be able to see the figments to be fooled. If you are  invisible  or the attacker is blind, the spell has no effect (although the normal miss chances still apply).
+
+--- [SYSTEM: PATHFINDER] ---
+Dispelling   Attack*  (Su) :   Opponents   that   are   dealt   sneak attack damage by a rogue with this ability are affected by a targeted dispel magic , targeting the lowest-level spell effect active on the target. The caster level for this ability is equal to the rogue's level. A rogue must have the major magic rogue talent before choosing dispelling attack.  
+Improved Evasion (Ex) : This works like evasion, except that while the rogue still takes no damage on a successful Reflex saving throw against attacks, she henceforth takes only half damage on a failed save. A helpless rogue does not gain the benefit of improved evasion.  
+Opportunist (Ex) :   Once per round, the rogue can make an attack of opportunity against an opponent who has just been
+
+--- [SYSTEM: PATHFINDER] ---
+If people are observing you using any of their senses (but typically sight), you can't use Stealth. Against most creatures, finding cover or concealment allows you to use Stealth. If your  observers   are   momentarily   distracted   (such   as   by   a Bluff check), you can attempt to use Stealth. While the others turn their attention from you, you can attempt a Stealth check if you can get to an unobserved place of some kind. This check, however, is made at a -10 penalty because you have to move fast.  
+Sniping : If you've already successfully used Stealth at least 10 feet from your target, you can make one ranged attack and then immediately use Stealth again. You take a -20 penalty on your Stealth check to maintain your obscured location.  
+Creating a Diversion to Hide : You can use Bluff to allow you to use Stealth. A successful Bluff check can give you the momentary diversion you need to attempt a Stealth check while people are aware of you.  
+Action : Usually none. Normally, you make a Stealth check as part of movement, so it doesn't take a separate action. However, using Stealth immediately after a ranged attack (see Sniping, above) is a move action.
+
+--- [SYSTEM: PATHFINDER] ---
+Timed :   This   trigger   periodically   springs   the   trap   after   a certain duration has passed.  
+Spell :   All   spell   traps   have   this   kind   of   trigger.   The appropriate spell descriptions explain the trigger conditions for traps that contain spell triggers.
+
+--- [SYSTEM: PATHFINDER] ---
+Impromptu Sneak Attack (Ex) :   Beginning   at   3rd   level, once per day an arcane trickster can declare one melee or ranged attack she makes to be a sneak attack (the target can be no more than 30 feet distant if the impromptu sneak attack is a ranged attack). The target of an impromptu sneak attack loses any Dexterity bonus to AC, but only against that attack. The power can be used against any target, but creatures that are not subject to critical hits take no extra damage (though they still lose any Dexterity bonus to AC against the attack).  
+At 7th level, an arcane trickster can use this ability twice per day.  
+Tricky Spells (Su) : Starting at 5th level, an arcane trickster can   cast   her   spells   without   their   somatic   or   verbal components, as if using the Still Spell and Silent Spell feats. Spells cast using this ability do not increase in spell level or casting time. She can use this ability 3 times per day at 5th level and one additional time per every two levels thereafter, to a maximum of 5 times per day at 9th level. The arcane trickster decides to use this ability at the time of casting.
+
+--- [SYSTEM: PATHFINDER] ---
+## Description  
+A +1 short sword with a thin, dull gray blade, this weapon provides a +4 bonus on its wielder's attack and damage rolls when he is making a sneak attack with it.
+
+--- [SYSTEM: PATHFINDER] ---
+## Stealth (Dex; Armor Check Penalty)  
+You are skilled at avoiding detection, allowing you to slip past foes or strike from an unseen position. This skill covers hiding and moving silently.  
+Check :   Y our   Stealth   check   is   opposed   by   the   Perception check of anyone who might notice you. You can move up to half your normal speed and use Stealth at no penalty. When moving at a speed greater than half but less than your normal speed, you take a -5 penalty. It's impossible to use Stealth while attacking, running, or charging.  
+A creature larger or smaller than Medium takes a size bonus or penalty on Stealth checks depending on its size category: Fine +16, Diminutive +12, Tiny +8, Small +4, Large -4, Huge -8, Gargantuan -12, Colossal -16.
+
+--- [SYSTEM: PATHFINDER] ---
+Advanced Talents :   At   10th   level,   and   every   two   levels thereafter, a rogue can choose one of the following advanced talents in place of a rogue talent.  
+Crippling Strike* (Ex) : A rogue with this ability can sneak attack opponents with such precision that her blows weaken and hamper them. An opponent damaged by one of her sneak attacks also takes 2 points of Strength damage.
+
+=== FINISHED NODE: GAMEMASTER ===
+  -> draft_response: Here's how **sneak attack** works in *Pathfinder* based on official rules:
+
+### **Core Mechanics**  
+- **Target Unawareness**: The target must be **unaware** of the attacker (e.g., hidden via *Stealth* or an *Opportunist* attack).  
+- **Dexterity Bonus Loss**: The target loses any **Dexterity bonus to AC** against the attack.  
+- **Extra Damage**: The attacker deals **extra damage** (typically 1d6 per rogue level, up to a maximum).  
+- **Critical Hits**: Sneak attacks **can** score critical hits, but creatures **not subject to critical hits** (e.g., constructs) take **no extra damage** (though they still lose Dexterity bonuses to AC).
+
+---
+
+### **Special Cases**  
+1. **Impromptu Sneak Attack (Arcane Trickster)**  
+   - **3rd level**: Once per day, declare a melee/ranged attack as a sneak attack (target must be within 30 feet for ranged).  
+   - **7th level**: Twice per day.  
+   - **Effect**: Targets lose Dexterity bonuses to AC; non-critical-hit creatures take **no extra damage**.  
+
+2. **Dispelling Attack (Rogue Talent)**  
+   - If a rogue deals **sneak attack damage**, the target is affected by a **dispel magic** targeting the lowest-level spell effect active on them.  
+
+3. **Crippling Strike (Rogue Talent, 10th level)**  
+   - Sneak attack damage also deals **2 points of Strength damage** to the target.  
+
+---
+
+### **Stealth and Positioning**  
+- **Stealth Check**: To use sneak attack, the attacker must be **hidden** (successful *Stealth* check vs. observer’s *Perception*).  
+- **Sniping**: If hidden at least 10 feet from a target, you can make a **ranged attack** and immediately use *Stealth* again (with a -20 penalty).  
+- **Cover/Concealment**: Helps maintain stealth and enables sneak attacks.  
+
+---
+
+### **Limitations**  
+- **Invisibility/Blindness**: If the attacker is **invisible** or the target is **blind**, sneak attack **fails** (unless the attacker is hidden via other means).  
+- **No Dexterity Bonus**: Only applies to the **specific attack** using sneak attack.  
+
+Let me know if you need clarification on specific class features! 🎮
+  -> phase_2_retries: 1
+
+=== FINISHED NODE: GMCRITIC ===
+  -> phase_2_passed: False
+  -> phase_2_feedback: The GENERATION contains invented mechanics not present in the FACTS. Specifically, it mentions 'extra damage (typically 1d6 per rogue level, up to a maximum)' and 'critical hits' without explicit support from the provided rule excerpts. These details are not stated in the FACTS and constitute hallucination.
+
+=== FINISHED NODE: GAMEMASTER ===
+  -> draft_response: Here’s how **sneak attack** works in **Pathfinder** based on the retrieved rules:
+
+### **Core Mechanics of Sneak Attack**
+- **Target Vulnerability**: A target loses its **Dexterity bonus to AC** against a sneak attack. This applies only to the specific attack, not ongoing defenses.
+- **Critical Hits**: Creatures **not subject to critical hits** (e.g., some monsters) take **no extra damage** from sneak attacks, though they still lose their Dexterity bonus to AC.
+
+---
+
+### **Special Sneak Attack Abilities**
+1. **Impromptu Sneak Attack (Arcane Trickster)**  
+   - **3rd Level**: Once per day, declare a melee or ranged attack as a sneak attack.  
+     - Target loses Dexterity bonus to AC (only for this attack).  
+     - Non-critical hit creatures take no extra damage.  
+   - **7th Level**: Use this ability **twice per day**.  
+
+2. **Tricky Spells (Arcane Trickster)**  
+   - **5th Level**: Cast spells without somatic or verbal components (like *Still Spell* or *Silent Spell*).  
+     - Spells cast this way do **not increase spell level** or casting time.  
+     - Can use this **3 times per day** at 5th level, increasing by 1 use every 2 levels (max 5/day at 9th level).
+
+---
+
+### **Conditions for Sneak Attack**
+- **Visibility**: The attacker must be able to **see the target**. If the attacker is **invisible** or the target is **blind**, the spell (e.g., *figment*) has no effect.  
+- **Stealth**: Typically, sneak attacks require the attacker to be **hidden** or have an advantage (e.g., flanking, surprise).  
+- **Movement**: Using **Stealth** requires moving at **half speed** or slower. Attacking or charging negates Stealth.
+
+---
+
+### **Additional Notes**
+- **Dispelling Attack**: A rogue with *Dispelling Attack* can target a **sneak attack** with *dispel magic*, affecting the lowest-level spell effect on the target.  
+- **Crippling Strike (Advanced Talent)**: At 10th level, a rogue’s sneak attack deals **2 points of Strength damage** to the target.  
+
+Let me know if you need clarification on specific interactions!
+  -> phase_2_retries: 2
+
+=== FINISHED NODE: GMCRITIC ===
+  -> phase_2_passed: False
+  -> phase_2_feedback: The GENERATION incorrectly states that 'if the target is blind, the spell has no effect' when the FACTS specify that 'if the attacker is blind, the spell has no effect'. This reversal of conditions is a hallucination not present in the provided rules.
+
+=== FINISHED NODE: SYSTEMCA ===
+  -> guessed_systems: ['pathfinder']
+
+=== FINISHED NODE: KEYEXPANSION ===
+  -> expanded_keywords: ['sneak attack', 'rogue class feature', 'advantage on attack roll', 'flat-footed condition', 'damage die (d6, d8, etc.)', 'hide in plain sight feat', 'deceptive action', 'critical hit', 'crippling strike feat', 'stealth attack', 'ambush damage', 'surprise round', 'unaware target', 'reaction disadvantage', 'combat advantage', 'attack roll bonus', 'damage progression', 'level-based sneak attack', 'initiative advantage', 'positional advantage', 'stealth check success']
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: PATHFINDER] ---
+An attacker must be able to see the figments to be fooled. If you are  invisible  or the attacker is blind, the spell has no effect (although the normal miss chances still apply).
+
+--- [SYSTEM: PATHFINDER] ---
+Dispelling   Attack*  (Su) :   Opponents   that   are   dealt   sneak attack damage by a rogue with this ability are affected by a targeted dispel magic , targeting the lowest-level spell effect active on the target. The caster level for this ability is equal to the rogue's level. A rogue must have the major magic rogue talent before choosing dispelling attack.  
+Improved Evasion (Ex) : This works like evasion, except that while the rogue still takes no damage on a successful Reflex saving throw against attacks, she henceforth takes only half damage on a failed save. A helpless rogue does not gain the benefit of improved evasion.  
+Opportunist (Ex) :   Once per round, the rogue can make an attack of opportunity against an opponent who has just been
+
+--- [SYSTEM: PATHFINDER] ---
+If people are observing you using any of their senses (but typically sight), you can't use Stealth. Against most creatures, finding cover or concealment allows you to use Stealth. If your  observers   are   momentarily   distracted   (such   as   by   a Bluff check), you can attempt to use Stealth. While the others turn their attention from you, you can attempt a Stealth check if you can get to an unobserved place of some kind. This check, however, is made at a -10 penalty because you have to move fast.  
+Sniping : If you've already successfully used Stealth at least 10 feet from your target, you can make one ranged attack and then immediately use Stealth again. You take a -20 penalty on your Stealth check to maintain your obscured location.  
+Creating a Diversion to Hide : You can use Bluff to allow you to use Stealth. A successful Bluff check can give you the momentary diversion you need to attempt a Stealth check while people are aware of you.  
+Action : Usually none. Normally, you make a Stealth check as part of movement, so it doesn't take a separate action. However, using Stealth immediately after a ranged attack (see Sniping, above) is a move action.
+
+--- [SYSTEM: PATHFINDER] ---
+Timed :   This   trigger   periodically   springs   the   trap   after   a certain duration has passed.  
+Spell :   All   spell   traps   have   this   kind   of   trigger.   The appropriate spell descriptions explain the trigger conditions for traps that contain spell triggers.
+
+--- [SYSTEM: PATHFINDER] ---
+Impromptu Sneak Attack (Ex) :   Beginning   at   3rd   level, once per day an arcane trickster can declare one melee or ranged attack she makes to be a sneak attack (the target can be no more than 30 feet distant if the impromptu sneak attack is a ranged attack). The target of an impromptu sneak attack loses any Dexterity bonus to AC, but only against that attack. The power can be used against any target, but creatures that are not subject to critical hits take no extra damage (though they still lose any Dexterity bonus to AC against the attack).  
+At 7th level, an arcane trickster can use this ability twice per day.  
+Tricky Spells (Su) : Starting at 5th level, an arcane trickster can   cast   her   spells   without   their   somatic   or   verbal components, as if using the Still Spell and Silent Spell feats. Spells cast using this ability do not increase in spell level or casting time. She can use this ability 3 times per day at 5th level and one additional time per every two levels thereafter, to a maximum of 5 times per day at 9th level. The arcane trickster decides to use this ability at the time of casting.
+
+--- [SYSTEM: PATHFINDER] ---
+## Description  
+A +1 short sword with a thin, dull gray blade, this weapon provides a +4 bonus on its wielder's attack and damage rolls when he is making a sneak attack with it.
+
+--- [SYSTEM: PATHFINDER] ---
+## Stealth (Dex; Armor Check Penalty)  
+You are skilled at avoiding detection, allowing you to slip past foes or strike from an unseen position. This skill covers hiding and moving silently.  
+Check :   Y our   Stealth   check   is   opposed   by   the   Perception check of anyone who might notice you. You can move up to half your normal speed and use Stealth at no penalty. When moving at a speed greater than half but less than your normal speed, you take a -5 penalty. It's impossible to use Stealth while attacking, running, or charging.  
+A creature larger or smaller than Medium takes a size bonus or penalty on Stealth checks depending on its size category: Fine +16, Diminutive +12, Tiny +8, Small +4, Large -4, Huge -8, Gargantuan -12, Colossal -16.
+
+--- [SYSTEM: PATHFINDER] ---
+Advanced Talents :   At   10th   level,   and   every   two   levels thereafter, a rogue can choose one of the following advanced talents in place of a rogue talent.  
+Crippling Strike* (Ex) : A rogue with this ability can sneak attack opponents with such precision that her blows weaken and hamper them. An opponent damaged by one of her sneak attacks also takes 2 points of Strength damage.
+
+=== FINISHED NODE: GAMEMASTER ===
+  -> draft_response: Here’s how **sneak attack** works in **Pathfinder** based on the retrieved rules:
+
+### **Core Mechanics of Sneak Attack**
+- **Target Vulnerability**: A target loses its **Dexterity bonus to AC** against a sneak attack. This applies only to the specific attack, not ongoing defenses.
+- **Critical Hits**: Creatures **not subject to critical hits** (e.g., some monsters) take **no extra damage** from sneak attacks, though they still lose their Dexterity bonus to AC.
+
+---
+
+### **Special Sneak Attack Abilities**
+1. **Impromptu Sneak Attack (Arcane Trickster)**  
+   - **3rd Level**: Once per day, declare a melee or ranged attack as a sneak attack.  
+     - Target loses Dexterity bonus to AC (only for this attack).  
+     - Non-critical hit creatures take no extra damage.  
+   - **7th Level**: Use this ability **twice per day**.  
+
+2. **Tricky Spells (Arcane Trickster)**  
+   - **5th Level**: Cast spells without somatic or verbal components (like *Still Spell* or *Silent Spell*).  
+     - Spells cast this way do **not increase spell level** or casting time.  
+     - Can use this **3 times per day** at 5th level, increasing by 1 use every 2 levels (max 5/day at 9th level).
+
+---
+
+### **Conditions for Sneak Attack**
+- **Visibility**: The attacker must be able to **see the target**. If the attacker is **invisible** or the target is **blind**, the spell (e.g., *figment*) has no effect.  
+- **Stealth**: Typically, sneak attacks require the attacker to be **hidden** or have an advantage (e.g., flanking, surprise).  
+- **Movement**: Using **Stealth** requires moving at **half speed** or slower. Attacking or charging negates Stealth.
+
+---
+
+### **Additional Notes**
+- **Dispelling Attack**: A rogue with *Dispelling Attack* can target a **sneak attack** with *dispel magic*, affecting the lowest-level spell effect on the target.  
+- **Crippling Strike (Advanced Talent)**: At 10th level, a rogue’s sneak attack deals **2 points of Strength damage** to the target.  
+
+Let me know if you need clarification on specific interactions!
+  -> phase_2_retries: 3
+
+=== FINISHED NODE: GMCRITIC ===
+  -> phase_2_passed: False
+  -> phase_2_feedback: The GENERATION incorrectly associates the figment visibility rule with sneak attack conditions. The FACTS specify that figments require line of effect and visibility, but the sneak attack mechanics (including Impromptu Sneak Attack) do not mention figments. The GENERATION falsely combines these distinct rules.
+
+=== FINISHED NODE: HYDE ===
+  -> guessed_systems: ['pathfinder']
+  -> clean_query: action economy total cover threatened area critical hit damage die type target visibility sneak level-based damage die feats attack flanking sneak attack works rogue light weapon one-handed weapon attack roll explain how ranged weapon Point-Blank Shot feat combat maneuver hit confirmation
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: PATHFINDER] ---
+## Improved Precise Shot (Combat)  
+Your ranged attacks ignore anything but total concealment and cover.  
+Prerequisites : Dex 19, Point-Blank Shot, Precise Shot, base attack bonus +11.  
+Benefit : Your ranged attacks ignore the AC bonus granted to targets by anything less than total cover, and the miss chance granted to targets by anything less than total concealment. Total   cover   and   total   concealment   provide   their   normal benefits against your ranged attacks.  
+Normal :   See the normal rules on the effects of cover and concealment in Combat.
+
+--- [SYSTEM: PATHFINDER] ---
+## Throw Splash Weapon  
+A splash weapon is a ranged weapon that breaks on impact, splashing or scattering its contents over its target and nearby creatures or objects. To attack with a splash weapon, make a ranged   touch   attack   against   the   target.   Thrown   splash weapons require no weapon proficiency, so you don't take the -4 nonproficiency penalty. A hit deals direct hit damage to the target, and splash damage to all creatures within 5 feet of the target. Splash weapons cannot deal precision-based damage (such as the damage from the rogue's sneak attack class feature).  
+You can instead target a specific grid intersection. Treat this as a ranged attack against AC 5. However, if you target a grid intersection, creatures in all adjacent squares are dealt the splash damage, and the direct hit damage is not dealt to any creature. You can't target a grid intersection occupied by a creature, such as a Large or larger creature; in this case, you're aiming at the creature.
+
+--- [SYSTEM: PATHFINDER] ---
+## Point-Blank Shot (Combat)  
+You are especially  accurate   when   making   ranged   attacks against close targets.  
+Benefit : You get a +1 bonus on attack and damage rolls with ranged weapons at ranges of up to 30 feet.
+
+--- [SYSTEM: PATHFINDER] ---
+A critical hit means that you roll your damage more than once, with all your usual bonuses, and add the rolls together. Unless otherwise specified, the threat range for a critical hit on an attack roll is 20, and the multiplier is ×2.  
+Exception : Precision damage (such as from a rogue's sneak attack class feature) and additional damage dice from special weapon qualities (such as flaming ) are not multiplied when you score a critical hit.  
+Increased   Threat   Range :   Sometimes   your   threat   range   is greater than 20. That is, you can score a threat on a lower number. In such cases, a roll of lower than 20 is not an automatic hit. Any attack roll that doesn't result in a hit is not a threat.  
+Increased Critical Multiplier : Some weapons deal better than double damage on a critical hit (see Equipment).  
+Spells and Critical Hits : A spell that requires an attack roll can score a critical hit. A spell attack that requires no attack roll   cannot   score   a   critical   hit.   If   a   spell   causes   ability damage or drain (see Special Abilities), the damage or drain is doubled on a critical hit.
+
+--- [SYSTEM: PATHFINDER] ---
+Bleeding Attack*  (Ex) :  A rogue with this ability can cause living opponents to bleed by hitting them with a sneak attack. This attack causes the target to take 1 additional point of damage each round for each die of the rogue's sneak attack (e.g., 4d6 equals 4 points of bleed). Bleeding creatures take that amount of damage every round at the start of each of their turns. The bleeding can be stopped by a DC 15  Heal check or the application of any effect that heals hit point damage. Bleeding damage from this ability does not stack with itself. Bleeding damage bypasses any damage reduction the creature might possess.  
+Combat Trick : A rogue that selects this talent gains a bonus combat feat (see Feats).  
+Fast Stealth (Ex) : This ability allows a rogue to move at full speed using the Stealth skill without penalty.  
+Finesse Rogue : A rogue that selects this talent gains Weapon Finesse as a bonus feat.  
+Ledge Walker (Ex) : This ability allows a rogue to move along narrow   surfaces   at   full   speed   using   the  Acrobatics  skill without penalty. In addition, a rogue with this talent is not flat-footed  when   using  Acrobatics  to   move   along   narrow surfaces.
+
+--- [SYSTEM: PATHFINDER] ---
+## Class Features  
+The following are class features of the rogue.  
+Weapon and Armor Proficiency :   Rogues   are   proficient with all simple weapons, plus the hand crossbow, rapier, sap, shortbow, and short sword. They are proficient with light armor, but not with shields.  
+Sneak Attack : If a rogue can catch an opponent when he is unable to defend himself effectively from her attack, she can strike a vital spot for extra damage.  
+damage is not multiplied. Ranged attacks can count as sneak attacks only if the target is within 30 feet.  
+With a weapon that deals nonlethal damage (like a sap, whip, or an unarmed strike), a rogue can make a sneak attack that deals nonlethal damage instead of lethal damage. She cannot use a weapon that deals lethal damage to deal nonlethal damage in a sneak attack, not even with the usual -4 penalty.  
+The rogue must be able to see the target well enough to pick out a vital spot and must be able to reach such a spot. A rogue cannot   sneak   attack   while   striking   a   creature   with concealment.
+
+--- [SYSTEM: PATHFINDER] ---
+| Point-Blank Shot*      | -                                                               | +1 attack and damage on targets within 30 feet           |
+| Far Shot*              | Point-Blank Shot                                                | Decrease ranged penalties by half                        |
+| Precise Shot*          | Point-Blank Shot                                                | No penalty for shooting into melee                       |
+| Improved Precise Shot* | Dex 19, Precise Shot, base attack bonus +11                     | No cover or concealment chance on ranged attacks         |
+| Pinpoint Targeting*    | Improved Precise Shot, base attack bonus +16                    | No armor or shield bonus on one ranged attack            |
+| Shot on the Run*       | Dex 13, Mobility, Point-Blank Shot, base attack bonus +4        | Make ranged attack at any point during movement          |
+| Rapid Shot*            | Dex 13, Point-Blank Shot                                        | Make one extra ranged attack                             |
+
+--- [SYSTEM: PATHFINDER] ---
+## Weapons  
+From the common longsword to the exotic dwarven urgrosh, weapons come in a wide variety of shapes and sizes.  
+All   weapons   deal   hit   point   damage.   This   damage   is subtracted from the current hit points of any creature struck by the weapon. When the result of the die roll to make an attack is a natural 20 (that is, the die actually shows a 20), this is known as a critical threat (although some weapons can score a critical threat on a roll of less than 20). If a critical threat is scored, another attack roll is made, using the same modifiers as the original attack roll. If this second attack roll exceeds the target's AC, the hit becomes a critical hit, dealing additional damage.
+
+=== FINISHED NODE: GAMEMASTER ===
+  -> draft_response: Here's how **Sneak Attack** works in *Pathfinder* based on official rules:
+
+### **Sneak Attack (Rogue Class Feature)**  
+- **Trigger**: The rogue must catch an opponent **unable to defend itself** (e.g., flanked, prone, or blinded).  
+- **Damage**: Deals **extra damage** (1d6 per rogue level, stacking with class features like *Bleeding Attack*).  
+  - **Lethal vs. Nonlethal**: Can deal **lethal** or **nonlethal** damage (if using a weapon that deals nonlethal damage, like a sap or whip).  
+  - **Critical Hits**: Sneak attack damage is **not multiplied** on critical hits.  
+- **Range Limitation**: Ranged attacks count as sneak attacks only if the target is **within 30 feet**.  
+- **Visibility & Line of Effect**:  
+  - Must have **line of effect** to the target.  
+  - Cannot sneak attack while striking a creature with **concealment** (e.g., behind cover).  
+
+### **Key Restrictions**  
+- **Armor/Weapons**: Rogues are proficient with **simple weapons**, **hand crossbows**, **rapiers**, **saps**, **shortbows**, and **short swords**. They cannot use **shields**.  
+- **Movement**: Cannot use **Sneak Attack** if the target is **concealed** or **hidden** (unless the rogue has abilities like *Fast Stealth* to bypass penalties).  
+
+This feature is central to the rogue’s combat style, emphasizing ambush and precision.
+  -> phase_2_retries: 4
+
+=== FINISHED NODE: GMCRITIC ===
+  -> phase_2_passed: False
+  -> phase_2_feedback: The GENERATION introduces several elements not explicitly stated in the FACTS, including specific examples of targets unable to defend (flanked, prone, blinded), the term 'line of effect,' and the concept of 'hidden' as a restriction. These additions constitute invented mechanics not present in the provided rule excerpts.
+
+=== FINISHED NODE: GMFAILSAFE ===
+  -> draft_response: I apologize, but I am having trouble verifying the official rules for this mechanic in my database right now. Could you try rephrasing your question or providing more context?
+
+=== FINISHED NODE: MEMORY ===
+  -> recent_history: ['User: Can you explain how sneak attack works in Pathfinder?', 'AI: I apologize, but I am having trouble verifying the official rules for this mechanic in my database right now. Could you try rephrasing your question or providing more context?']
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+
+
+
+
+
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+Test 11: 
+ QUERY: [How does flashbacks work in Blades in the dark?]
+
+
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['blades_in_the_dark']
+  -> clean_query: flashbacks mechanics
+  -> phase_1_retries: 1
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: True
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: BLADES_IN_THE_DARK] ---
+## FLASHBACKS  
+The rules don't distinguish between actions performed in the present moment and those performed in the past. When an operation is underway, you can invoke a fl ashback to roll for an action in the past that impacts your current situation. Maybe you convinced the district Watch sergeant to cancel the Bluecoat patrol tonight, so you make a Sway roll to see how that went.  
+The GM sets a stress cost when you activate a flashback action.  
+-  0 Stress: An ordinary action for which you had easy opportunity. The Cutter Consorted with her friend Chael to agree to arrive at the dice game ahead of time, to suddenly spring out as a surprise ally.
+-  1 Stress: A complex action or unlikely opportunity. The Hound Finessed his pistols into a hiding spot near the card table so he could retrieve them after the pat-down at the front door.
+-  2 (or more) Stress: An elaborate action that involved special opportunities or contingencies. The Whisper has already Studied the history of the property and learned of a ghost that is known to haunt its ancient canal dock-a ghost that can be compelled to reveal the location of the hidden vault.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+In a roleplaying game, it's different. When it's your turn, you say what your character does within the ongoing fictional narrative. You don't pick a mechanic first, you say something about the fiction first. Your choices in a roleplaying game aren't immediately constrained by the mechanics, they're constrained by the established fictional situation. In other words, the mechanics are brought in after the fictional action has determined which mechanics we need to use.  
+For example, in Blades in the Dark , there are several different mechanics that might be used if a character tries to pick the lock on a safe. It's essentially meaningless to play mechanics-first. 'I pick a lock' isn't a mechanical choice in the game. To understand which mechanic to use, we have to first establish the fiction.  
+If your character is at their liberty back at the crew's lair, with plenty of time to dedicate to opening the lock on the safe, then we could use one of the downtime mechanics-namely 'Work on a long-term project.' You might do very well and open it quickly, or it might prove more challenging, requiring several attempts over a longer period of time.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+## ambush  
+When you attack from hiding or spring a trap, you get +1d to your roll.  
+This ability benefits from preparation- so don't forget you can do that in a flashback.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+'I told you that Trayga was seen at the docks, but that was all wrong. It was supposed to be Arlo. '  
+'Oh! Well that changes things. Okay, got it. '  
+If you're not sure what to do, keep it simple. Go with what's obvious to you. Add mechanics when you're comfortable. Forgive each other's mistakes. Fly casual.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+## limits of flashbacks  
+A flashback isn't time travel. It can't 'undo' something that just occurred in the present moment. For instance, if Inspector Helker confronts you about recent thefts of occult artifacts when you're at Lady Bowmore's party, you can't call for a flashback to assassinate the Inspector the night before. She's here now, questioning you-that's established in the fiction. You can call for a flashback to show that you intentionally tipped off the inspector so she would confront you at the party-so you could use that opportunity to impress Lady Bowmore with your aplomb and daring.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+## FICTION-FIRST GAMING  
+Fiction-first is a bit of jargon to describe the process of playing a roleplaying game, as opposed to other sorts of games you might be used to.  
+In a standard board game, for example, when you take your turn, you choose a move from one of the mechanics of the game, and then use that game system to resolve what happens. You might say, 'I'm going to pay two stone to build a second fort on my home tile. ' We could call this process 'mechanics-first. ' What you do on your turn is pick a mechanic to engage, then resolve that mechanic. Y our choices are constrained by the mechanics of the game. Y ou might color it in with some fictional trappings, like, 'The brave citizens of Baronia heed the call to war and build a stout fort!' but the fiction is secondary; it's flavor added on. In other words, the fiction is brought in after the mechanics, to describe what happened.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+After the stress cost is paid, a flashback action is handled just like any other action. Sometimes it will entail an action roll, because there's some danger or trouble involved. Sometimes a flashback will entail a fortune roll, because we just need to find out how well (or how much, or how long, etc.). Sometimes a flashback won't call for a roll at all because you can just pay the stress and it's accomplished.  
+If a flashback involves a downtime activity, pay 1 coin or 1 rep for it, instead of stress. (See page 153 for details about downtime.)  
+One of the best uses for a flashback is when the engagement roll goes badly. After the GM describes the trouble you're in, you can call for a flashback to a special preparation you made, 'just in case' something like this happened. This way, your 'flashback planning' will be focused on the problems that do happen, not the problems that might happen. For more on this, see Act Now, Plan Later on page 185.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+Think of the mechanics of the game as tools in a toolbox. There's no point saying, 'I hammer it' until you know what you're building. Also, there's no constraint that says you must always use a hammer and nail every time you need to attach two pieces of wood. You use the tools that suit what you're trying to do. The same goes for mechanics in a roleplaying game. First establish the fiction, then select a mechanical tool from the toolbox that suits the situation you need to resolve. Which tools you pick will often be pragmatic, but can also be a stylistic choice. There's no one right way to choose a tool, after all. The tools are there for you to use as you see fit; developing a style of use and set of precedents as you go along.  
+The text of the game gives you both the set of tools and a guide to their usage, which is essentially the best practices the playtesters  and I developed. These best practices will start you on your way toward successful game play-but ultimately they are just a guide. It's up to you and your group to put them into practice and learn the use and feel of the tools in play.
+
+=== FINISHED NODE: GAMEMASTER ===
+  -> draft_response: Here’s how **flashbacks** work in *Blades in the Dark*, based on the rules:
+
+### **Core Mechanics**  
+- **Purpose**: Flashbacks let you roll for an action taken in the past that impacts your current situation. The GM sets a **stress cost** when you activate a flashback.  
+- **Stress Costs**:  
+  - **0 Stress**: An easy, routine action (e.g., consorting with a friend to set up a surprise).  
+  - **1 Stress**: A complex or unlikely action (e.g., hiding pistols during a pat-down).  
+  - **2+ Stress**: An elaborate action with special contingencies (e.g., studying a ghost’s history to locate a vault).  
+
+### **Handling Flashbacks**  
+- After paying the stress cost, a flashback is resolved like any other action:  
+  - **Action Roll**: If there’s danger or risk (e.g., ambush, confrontation).  
+  - **Fortune Roll**: To determine success level (e.g., how well a plan worked).  
+  - **No Roll**: If the action is certain (e.g., paying stress to complete a task).  
+- **Downtime Alternative**: If the flashback involves a long-term activity (e.g., studying a property), pay **1 coin or 1 rep** instead of stress.  
+
+### **Key Constraints**  
+- **No Undoing the Present**: Flashbacks can’t reverse recent events (e.g., you can’t kill an inspector who just confronted you). They must relate to **pre-existing plans** or past actions that still influence the present.  
+- **Fiction-First**: Establish the fictional context of the past action first, then apply mechanics. For example, if you’re using a flashback to “tip off” an inspector, describe the fiction (e.g., “I bribed her to question me here”) before resolving the stress cost.  
+
+### **Strategic Use**  
+- **Act Now, Plan Later**: Flashbacks are ideal for addressing failed engagement rolls. If a roll goes badly, use a flashback to reveal prior preparation (e.g., “I’d already planted evidence to frame someone else”).  
+- **Ambush Bonus**: Flashbacks involving ambush (e.g., setting a trap) gain **+1d** to rolls, as preparation is key.  
+
+Always prioritize **fictional context** over mechanics—use flashbacks to explore how past choices shape the present! 🕹️
+  -> phase_2_retries: 1
+
+=== FINISHED NODE: GMCRITIC ===
+  -> phase_2_passed: True
+  -> phase_2_feedback: 
+
+=== FINISHED NODE: MEMORY ===
+  -> recent_history: ['User: How does flashbacks work in Blades in the dark?', 'AI: Here’s how **flashbacks** work in *Blades in the Dark*, based on the rules:\n\n### **Core Mechanics**  \n- **Purpose**: Flashbacks let you roll for an action taken in the past that impacts your current situation. The GM sets a **stress cost** when you activate a flashback.  \n- **Stress Costs**:  \n  - **0 Stress**: An easy, routine action (e.g., consorting with a friend to set up a surprise).  \n  - **1 Stress**: A complex or unlikely action (e.g., hiding pistols during a pat-down).  \n  - **2+ Stress**: An elaborate action with special contingencies (e.g., studying a ghost’s history to locate a vault).  \n\n### **Handling Flashbacks**  \n- After paying the stress cost, a flashback is resolved like any other action:  \n  - **Action Roll**: If there’s danger or risk (e.g., ambush, confrontation).  \n  - **Fortune Roll**: To determine success level (e.g., how well a plan worked).  \n  - **No Roll**: If the action is certain (e.g., paying stress to complete a task).  \n- **Downtime Alternative**: If the flashback involves a long-term activity (e.g., studying a property), pay **1 coin or 1 rep** instead of stress.  \n\n### **Key Constraints**  \n- **No Undoing the Present**: Flashbacks can’t reverse recent events (e.g., you can’t kill an inspector who just confronted you). They must relate to **pre-existing plans** or past actions that still influence the present.  \n- **Fiction-First**: Establish the fictional context of the past action first, then apply mechanics. For example, if you’re using a flashback to “tip off” an inspector, describe the fiction (e.g., “I bribed her to question me here”) before resolving the stress cost.  \n\n### **Strategic Use**  \n- **Act Now, Plan Later**: Flashbacks are ideal for addressing failed engagement rolls. If a roll goes badly, use a flashback to reveal prior preparation (e.g., “I’d already planted evidence to frame someone else”).  \n- **Ambush Bonus**: Flashbacks involving ambush (e.g., setting a trap) gain **+1d** to rolls, as preparation is key.  \n\nAlways prioritize **fictional context** over mechanics—use flashbacks to explore how past choices shape the present! 🕹️']
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+
+
+
+
+
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+Test 12: 
+ QUERY: [How does falling damage work?]
+
+
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['multiple']
+  -> clean_query: How does falling damage work?
+  -> phase_1_retries: 1
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: False
+  -> phase_1_feedback: System Extraction: The router incorrectly included 'multiple' systems without explicit mention in the question. The user's query about falling damage does not specify any system, so no systems should be selected. Clean Query: Valid, as it preserves core terms without filler. Contextual Systems and Cross-System Comparison: Not applicable due to lack of explicit or implicit system references in the question.
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['multiple']
+  -> clean_query: falling damage
+  -> phase_1_retries: 2
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: False
+  -> phase_1_feedback: 1. System Extraction: Failed - The user question contains no explicit system references. The router incorrectly included systems not mentioned in the query. 2. Contextual Systems: N/A - No chat summary/recent history provided. 3. Cross-System Comparison: N/A - No implicit system references. 4. Clean Query Quality: Passed - 'falling damage' is properly stripped of conversational elements while retaining core mechanics terminology.
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['multiple']
+  -> clean_query: falling damage
+  -> phase_1_retries: 3
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: False
+  -> phase_1_feedback: 1. System Extraction: Failed - The user question contains no explicit system references. The router incorrectly included systems without explicit mention. 2. Contextual Systems: N/A - No chat summary/recent history provided. 3. Cross-System Comparison: N/A - No implicit system references. 4. Clean Query Quality: Passed - 'falling damage' is properly stripped of conversational elements while retaining core mechanics terminology.
+
+=== FINISHED NODE: ROUTERFAIL ===
+  -> guessed_systems: ['multiple']
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Falling [Hazard]  
+A creature that falls takes 1d6 Bludgeoning damage at the end of the fall for every 10 feet it fell, to a maximum of 20d6. When the creature lands, it has the Prone condition unless it avoids taking any damage from the fall.  
+A creature that falls into water or another liquid can use its Reaction to make a DC 15 Strength (Athletics) or Dexterity (Acrobatics) check to hit the surface head or feet first. On a successful check, any damage resulting from the fall is halved.
+
+--- [SYSTEM: BLADES_IN_THE_DARK] ---
+## don't roll twice for the same thing  
+When a PC faces danger, they make an action roll. Also, they can roll resistance to avoid a bad outcome. However, don't roll twice for the exact same thing.  
+For example, Arlyn is dueling a Red Sash on the roof. The Red Sash drives her back with a flurry of feints and slashes, and there's a danger that Arlyn will be forced over the edge during the skirmish. Arlyn's player makes an action roll to see how her counter-attack goes. She rolls badly! Arlyn is forced over the edge and falls off the roof.  
+But she can roll to resist, right? Yes. She can resist the harm that results from the fall. But she can't 'undo' being forced over the edge. That's already been determined by her action roll. Her resistance reduces the impact of the fall. Instead of breaking her leg, she suffers lesser harm (maybe a sprained ankle) or maybe the GM rules that she's able to avoid the harm entirely by rolling into a rough crash-landing. Either way, she's still fallen off the roof.
+
+--- [SYSTEM: LASER_AND_FEELINGS] ---
+## ROLLING THE DICE  
+When you do something risky, roll 1d6 to find out how it goes. Roll +1d if you're prepared and +1d if you're an expert . (The GM tells you how many dice to roll, based on your character and the situation.) Roll your dice and compare each die result to your number.  
+<!-- image -->  
+- If you're using LASERS (science, reason), you want to roll under your number.  
+<!-- image -->  
+<!-- image -->  
+0  
+- If you're using FEELINGS , (rapport, passion) you want to roll over your number.
+- If none of your dice succeed , it goes wrong. The GM says how things get worse somehow.
+- 1 If one die succeeds , you barely manage it. The GM inflicts a complication, harm, or cost.
+- 2 If two dice succeed , you do it well. Good job!
+- 3 If three dice succeed , you get a critical success! The GM tells you some extra effect you get.  
+<!-- image -->  
+<!-- image -->  
+<!-- image -->  
+<!-- image -->  
+!  
+<!-- image -->  
+Also, pick one problem: Fuel Hog (always needs energy crystals), Only One Medical Pod (and Captain Darcy is in it), Horrible Circuit Breakers (in battle, consoles tend to explode on the bridge), Grim Reputation (Captain Darcy did some bad stuff in the past).
+
+--- [SYSTEM: PATHFINDER] ---
+## Falling  
+Creatures that fall take 1d6 points of damage per 10 feet fallen,   to   a   maximum   of   20d6.   Creatures   that   take   lethal damage from a fall land in a prone position.  
+If a character deliberately jumps instead of merely slipping or   falling,   the   damage   is   the   same   but   the   first   1d6   is nonlethal  damage.  A DC 15 Acrobatics check allows the character to avoid any damage from the first 10 feet fallen and   converts   any   damage   from   the   second   10   feet   to nonlethal damage. Thus, a character who slips from a ledge 30   feet   up   takes   3d6   damage.   If   the   same   character deliberately jumps, he takes 1d6 points of nonlethal damage and 2d6 points of lethal damage. And if the character leaps down with a successful Acrobatics check, he takes only 1d6 points of nonlethal damage and 1d6 points of lethal damage from the plunge.  
+Falls onto yielding surfaces (soft ground, mud) also convert the first 1d6 of damage to nonlethal damage. This reduction is cumulative with reduced damage due to deliberate jumps and the Acrobatics skill.
+
+=== FINISHED NODE: SUMMARIZER ===
+  -> draft_response: In **Dungeons & Dragons**, falling damage is 1d6 per 10 feet fallen (max 20d6), with prone landing unless damage is avoided, and water allows a check to halve damage. **Pathfinder** mirrors this but adds nonlethal damage for deliberate jumps or soft landings, with Acrobatics checks to mitigate harm. Other systems like *Blades in the Dark* and *Laser and Feelings* lack specific falling damage rules. Could you clarify which system you're using?
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+
+
+
+
+
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
+Test 13: 
+ QUERY: [How does falling damage work in DnD?tell me about lasers feelings.]
+
+
+
+=== FINISHED NODE: ROUTER ===
+  -> phase_1_passed: False
+  -> phase_1_feedback: System crash during routing: Invalid json output: 
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE . Please try again and ensure strict JSON output.
+  -> phase_1_retries: 1
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: False
+  -> phase_1_feedback: Failed System Extraction: Did not include explicit systems 'dungeoun_and_dragons' and 'laser_and_feelings'. Failed Clean Query Quality: Original query contains explicit mechanical terms about falling damage and 'lasers feelings' which should be preserved. Missing both systems in Selected Systems field.
+
+=== FINISHED NODE: ROUTER ===
+  -> guessed_systems: ['dungeoun_and_dragons', 'laser_and_feelings']
+  -> clean_query: falling damage lasers feelings
+  -> phase_1_retries: 2
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: ROUTERCRITIC ===
+  -> phase_1_passed: True
+  -> phase_1_feedback: 
+
+=== FINISHED NODE: RETRIEVER ===
+  -> retrieved_context: --- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Prismatic Rays  
+1d8 Ray  
+- 1 Red. Failed Save: 12d6 Fire damage. Successful Save: Half as much damage.
+- 2 Orange. Failed Save: 12d6 Acid damage. Successful Save: Half as much damage.
+- 3 Yellow. Failed Save: 12d6 Lightning damage. Successful Save: Half as much damage.
+- 4 Green. Failed Save: 12d6 Poison damage. Successful Save: Half as much damage.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Feather Fall  
+Level 1 Transmutation (Bard, Sorcerer, Wizard)  
+Casting Time: Reaction, which you take when you or a creature you can see within 60 feet of you falls  
+Range: 60 feet  
+Components: V, M (a small feather or piece of down) Duration: 1 minute  
+Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Sentient Item's Senses
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Level 9: Acrobatic Movement  
+While you aren't wearing armor or wielding a Shield, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Wand of Wonder Effects
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Hover  
+Some creatures can hover, as noted in their stat blocks, and some spells and other effects grant the ability to hover. Hovering while flying prevents you from falling in certain circumstances. See also 'Flying.'
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Damage  
+Damage represents harm that causes a creature or an object to lose Hit Points.
+
+--- [SYSTEM: DUNGEOUN_AND_DRAGONS] ---
+## Druidcraft  
+Transmutation Cantrip (Druid)  
+Casting Time: Action Range: 30 feet Components: V, S Duration: Instantaneous  
+Whispering to the spirits of nature, you create one of the following effects within range.  
+Weather Sensor. You create a Tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.  
+Bloom. You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.  
+Sensory Effect. You create a harmless sensory effect, such as falling leaves, spectral dancing fairies, a gentle breeze, the sound of an animal, or the faint odor of skunk. The effect must fit in a 5-foot Cube.  
+Fire Play. You light or snuff out a candle, a torch, or a campfire.
+
+--- [SYSTEM: LASER_AND_FEELINGS] ---
+## LASERS &amp; FEELINGS: THE DOUBLECLICKS TRIBUTE RPG (v1.4)  
+The game text is © 2013 by John Harper.  
+johnharper.itch.io  
+The game format is open for hacking and remixing under  
+- a CC BY 4.0 license.  
+creativecommons.org/ licenses/by/4.0  
+Make your own L&amp;F hack and share it (or sell it!) as you like.
+
+--- [SYSTEM: LASER_AND_FEELINGS] ---
+## Feelings LASERS
+
+--- [SYSTEM: LASER_AND_FEELINGS] ---
+## CHECK OUT  
+thedoubleclicks.com nightskygames.com
+
+--- [SYSTEM: LASER_AND_FEELINGS] ---
+- If you roll your number exactly , you have LASER FEELINGS .  You get a special insight into what's going on. Ask the GM a question and they'll answer you honestly. Some good questions:
+- What are they really feeling? Who's behind this? How could I get them to \_\_\_\_\_? What should I be on the lookout for? What's the best way to \_\_\_\_\_? What's really going on here?  
+(A roll of LASER FEELINGS counts as a success.)  
+<!-- image -->  
+HELPING: If  you want to help someone else who's rolling, say how you try to help and make a roll. If you succeed, give them +1d .
+
+--- [SYSTEM: LASER_AND_FEELINGS] ---
+## THANKS  
+Aubrey, Ron, Vincent, Ben, Graham, Meg, Ryan, Jason, Brendan, Gene, Laser, Leonard, Bill, Wil.
+
+--- [SYSTEM: LASER_AND_FEELINGS] ---
+## ROLLING THE DICE  
+When you do something risky, roll 1d6 to find out how it goes. Roll +1d if you're prepared and +1d if you're an expert . (The GM tells you how many dice to roll, based on your character and the situation.) Roll your dice and compare each die result to your number.  
+<!-- image -->  
+- If you're using LASERS (science, reason), you want to roll under your number.  
+<!-- image -->  
+<!-- image -->  
+0  
+- If you're using FEELINGS , (rapport, passion) you want to roll over your number.
+- If none of your dice succeed , it goes wrong. The GM says how things get worse somehow.
+- 1 If one die succeeds , you barely manage it. The GM inflicts a complication, harm, or cost.
+- 2 If two dice succeed , you do it well. Good job!
+- 3 If three dice succeed , you get a critical success! The GM tells you some extra effect you get.  
+<!-- image -->  
+<!-- image -->  
+<!-- image -->  
+<!-- image -->  
+!  
+<!-- image -->  
+Also, pick one problem: Fuel Hog (always needs energy crystals), Only One Medical Pod (and Captain Darcy is in it), Horrible Circuit Breakers (in battle, consoles tend to explode on the bridge), Grim Reputation (Captain Darcy did some bad stuff in the past).
+
+--- [SYSTEM: LASER_AND_FEELINGS] ---
+## GM: RUN THE GAME  
+Play to find out how they defeat the threat. Introduce the threat by showing evidence of its recent badness. Before a threat does something to the characters, show signs that it's about to happen, then ask them what they do. 'Zorgon charges the megacannons on his ship. What do you do?' 'Daneela pours you a glass of Arcturan whiskey and slips her arm around your waist. What do you do?'  
+Call for a roll when the situation is uncertain. Don't pre-plan outcomes-let the chips fall where they may. Use failures to push the action forward. The situation always changes after a roll, for good or ill.  
+<!-- image -->  
+Ask questions and build on the answers. 'Have any of you encountered a Void Cultist before? Where? What happened?'  
+<!-- image -->  
+5. Rip a hole in reality
+6. Fix Everything
+
+=== FINISHED NODE: GAMEMASTER ===
+  -> draft_response: ### Falling Damage in DnD  
+The provided context does **not explicitly detail standard falling damage rules** (e.g., how damage is calculated based on fall height). However, it includes the following related mechanics:  
+- **Feather Fall** (Level 1 spell):  
+  - Prevents fall damage if a creature lands before the spell ends.  
+  - Slows descent to 60 feet per round.  
+- **Acrobatic Movement** (Level 9):  
+  - Allows movement along vertical surfaces or liquids without falling.  
+- **Hover** (some creatures/spells):  
+  - Prevents falling damage when hovering while flying.  
+
+For standard falling damage rules (e.g., 1d6 per 10 feet), refer to official DnD resources like the *Player's Handbook*.
+
+---
+
+### Lasers & Feelings (L&F) RPG Mechanics  
+1. **Rolling the Dice**:  
+   - **Risk**: Roll 1d6 (or more with modifiers).  
+     - **LASERS** (science/reason): Roll **under** your number.  
+     - **FEELINGS** (rapport/passion): Roll **over** your number.  
+   - **Successes**:  
+     - **0**: Failure (things go wrong).  
+     - **1**: Barely manage (complication/harm).  
+     - **2**: Success (good job!).  
+     - **3**: Critical success (extra effect!).  
+
+2. **Laser Feelings**:  
+   - Roll **exactly** your number for insight.  
+   - Ask the GM a question (e.g., "What’s really going on?").  
+   - Counts as a success.  
+
+3. **GM Guidance**:  
+   - Introduce threats with evidence, ask players what they do.  
+   - Use failures to drive narrative changes.  
+   - Avoid pre-planned outcomes; let rolls shape the story.  
+
+4. **Problems (Character Flaws)**:  
+   - Example: *Fuel Hog* (always needs energy crystals).  
+
+For full rules, see the [L&F v1.4](https://johnharper.itch.io/lasers-and-feelings) system.
+  -> phase_2_retries: 1
+
+=== FINISHED NODE: GMCRITIC ===
+  -> phase_2_passed: True
+  -> phase_2_feedback: 
+
+=== FINISHED NODE: MEMORY ===
+  -> recent_history: ['User: How does falling damage work in DnD?tell me about lasers feelings.', 'AI: ### Falling Damage in DnD  \nThe provided context does **not explicitly detail standard falling damage rules** (e.g., how damage is calculated based on fall height). However, it includes the following related mechanics:  \n- **Feather Fall** (Level 1 spell):  \n  - Prevents fall damage if a creature lands before the spell ends.  \n  - Slows descent to 60 feet per round.  \n- **Acrobatic Movement** (Level 9):  \n  - Allows movement along vertical surfaces or liquids without falling.  \n- **Hover** (some creatures/spells):  \n  - Prevents falling damage when hovering while flying.  \n\nFor standard falling damage rules (e.g., 1d6 per 10 feet), refer to official DnD resources like the *Player\'s Handbook*.\n\n---\n\n### Lasers & Feelings (L&F) RPG Mechanics  \n1. **Rolling the Dice**:  \n   - **Risk**: Roll 1d6 (or more with modifiers).  \n     - **LASERS** (science/reason): Roll **under** your number.  \n     - **FEELINGS** (rapport/passion): Roll **over** your number.  \n   - **Successes**:  \n     - **0**: Failure (things go wrong).  \n     - **1**: Barely manage (complication/harm).  \n     - **2**: Success (good job!).  \n     - **3**: Critical success (extra effect!).  \n\n2. **Laser Feelings**:  \n   - Roll **exactly** your number for insight.  \n   - Ask the GM a question (e.g., "What’s really going on?").  \n   - Counts as a success.  \n\n3. **GM Guidance**:  \n   - Introduce threats with evidence, ask players what they do.  \n   - Use failures to drive narrative changes.  \n   - Avoid pre-planned outcomes; let rolls shape the story.  \n\n4. **Problems (Character Flaws)**:  \n   - Example: *Fuel Hog* (always needs energy crystals).  \n\nFor full rules, see the [L&F v1.4](https://johnharper.itch.io/lasers-and-feelings) system.']
+=-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=
