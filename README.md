@@ -133,7 +133,7 @@ Modron relies on local execution for both data parsing and orchestration. Follow
 
 ### Step 1: Clone the Repository
 ```bash
-git clone [https://github.com/Draiken7/Modron_Multi_Agent-RAG-Orchestration-System-for-TTRPGs/tree/main](https://github.com/Draiken7/Modron_Multi_Agent-RAG-Orchestration-System-for-TTRPGs/tree/main)
+git clone [https://github.com/Draiken7/Modron_Multi_Agent-RAG-Orchestration-System-for-TTRPGs.git](https://github.com/Draiken7/Modron_Multi_Agent-RAG-Orchestration-System-for-TTRPGs.git)
 ```
 
 ### Step 2: Automated Environment Setup
